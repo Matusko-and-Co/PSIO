@@ -7,4 +7,4 @@ V súèasnosti prebieha projekt APVV s lekárskou fakultou, kde sa zaoberáme predik
 ## Blízke termíny
 * 2.10 o 8:45 - Stretnutie so Zuzanou Chladnou
 * do 3.10.2014, 12:20 - Odovzda plán projektu
-* 5.10 o 18:10 - Stretnutie s cviciacim (Andrej Jursa)
+* streda 11:30 - Stretnutia s cviciacim (Andrej Jursa)
