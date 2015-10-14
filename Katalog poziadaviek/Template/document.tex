@@ -49,12 +49,19 @@ Tento projekt bude obsahovať animáciu šírenia infekcie v určitej oblasti (k
 		\hline
 		\centering Pojem & vysvetlenie \\ [0ex]
 		\hline
-		Predikcia & odhad vývoja, predpoveď \\ [0ex]
+		predikcia & odhad vývoja, predpoveď \\ [0ex]
 		\hline
-		Infekčné ochorenie & nákazlivé ochorenie spôsobené mikroorganizmami \\ [0ex]
+		infekčné ochorenie & nákazlivé ochorenie spôsobené mikroorganizmami \\ [0ex]
 		\hline
 	\end{tabular}
 \end{table}
+
+\section[Odkazy]{\rmfamily\bfseries
+	Odkazy}
+
+\section[Prehľad ďalšej časti]{\rmfamily\bfseries
+	Prehľad ďalšej časti}
+Dokument ďalej obsahuje špecifikáciu softvéru, služby a funkcie, ktoré má poskytovať, požiadavky a obmedzenia. 
 
 \renewcommand{\chaptername}{}	
 \chapter[Celkový opis]{\rmfamily\bfseries
@@ -62,7 +69,7 @@ Tento projekt bude obsahovať animáciu šírenia infekcie v určitej oblasti (k
 
 \section[Kontext systému]{\rmfamily\bfseries
 	Kontext systému}
-	Cieľom je vytvoriť webovú aplikáciu slúžiacu pre zobrazenie priebehu šírenia infekčného ochorenia. Aplikácia má dopomôcť cieĺovému konzumentovi vytvoriť si vizuálnu predtavu širenia infekcie prostredníctvom animácie.
+	Cieľom je vytvoriť webovú aplikáciu slúžiacu na zobrazenie priebehu šírenia infekčného ochorenia. Aplikácia má dopomôcť cieľovému konzumentovi vytvoriť si vizuálnu predstavu šírenia infekcie prostredníctvom animácie.
 
 \section[Funkcie systému]{\rmfamily\bfseries
 	Funkcie systému}
@@ -75,7 +82,7 @@ Užívateľ bude mať možnosť:
 Administrátor bude mať možnosť:
 \begin{itemize}
 	\item všetky možnosti, ktoré má užívateľ 
-	\item prihlásiť sa pomocou svojho unikátneho administrátorského hesla
+	\item prihlásiť sa pomocou svojho unikátneho administrátorského hesla a meniť ho
 	\item načítať vstupný súbor s údajmi
 	\item modifikovať predikčnú databázu
 \end{itemize}
@@ -83,14 +90,15 @@ Administrátor bude mať možnosť:
 \section[Triedy používateľov a ich vlastnosti]{\rmfamily\bfseries
 	Triedy používateľov a ich vlastnosti}
 \begin{itemize}
-	\item Užívateľ - je ľubovolná osoba, ktorá má záujem pozrieť si predikciu šírenia infekčných ochorení.
-	\item Adminitrátor - je zadávateľ projektu alebo ním splnomocnená osoba. Má odbornú znalosť z problematiky predikcie šírenia infekčných ochorení. Je schopný
+	\item Užívateľ je ľubovoľná osoba, ktorá má záujem pozrieť si predikciu šírenia infekčných ochorení.
+	\item Administrátor je zadávateľ projektu alebo ním splnomocnená osoba. Má odbornú znalosť z problematiky predikcie šírenia infekčných ochorení. Je schopný
 na základe svojich odborných výpočtov upraviť obsah stránky.
 \end{itemize}
 
-\section[Obmedzenia]{\rmfamily\bfseries
-	Obmedzenia}
-	Software nebude fungovať na webových prehliadačoch Internet Exploerer verzie 8 a starších. 
+\section[Predpoklady a obmedzenia]{\rmfamily\bfseries
+	Predpoklady a obmedzenia}
+	Pre korektné zobrazenie je potrebný webový prehliadač. Serverová časť vyžaduje server, na ktorom bude bežať nejaký server s php modulom.\par
+	Softvér nebude fungovať na webových prehliadačoch Internet Explorer verzie 9 a starších. Stránka nebude prispôsobená na smartfóny a iné prenosné zariadenia. 
 
 \renewcommand{\chaptername}{}	
 \chapter[Špecifikácia požiadaviek]{\rmfamily\bfseries
@@ -101,7 +109,7 @@ na základe svojich odborných výpočtov upraviť obsah stránky.
 	\centering
 	\begin{tabular}{|>{\centering\arraybackslash}m{3in}|>{\centering\arraybackslash}m{3in}|}
 		\hline
-		\centering Označenie & popis \\ [0ex]
+		\centering Označenie & Popis \\ [0ex]
 		\hline
 		Popis & Užívateľ navštívi hlavnú stránku, kde si spustí animáciu predikcie šírenia infekčných ochorení. Animácia sa mu
 		zobrazí v grafickom okne ako mapa Slovenska rozdelená na kraje. V závislosti na percentuálnom výskyte ochorenia
@@ -110,24 +118,24 @@ na základe svojich odborných výpočtov upraviť obsah stránky.
 		Opakovanosť & Niekoľkokrát za deň \\ [0ex]
 		\hline
 		Bežná cesta & 	\begin{itemize}
-							\item Používateľ navštívi hlavnú stránku 
-							\item Zvolí jednu z možností užívateľského rozhrania - "spustiť animáciu"
-							\item Systém spustí animáciu v grafickom okne
-							\item Užívateľ má ďalej možnost animáciu zastaviť, prerušiť a znovu spustiť
+							\item používateľ navštívi hlavnú stránku 
+							\item zvolí jednu z možností užívateľského rozhrania - „spustiť animáciu“
+							\item systém spustí animáciu v grafickom okne
+							\item užívateľ má ďalej možnosť animáciu zastaviť, prerušiť a znovu spustiť
 						\end{itemize} \\ [0ex]
 		\hline
 		Alternatívna cesta & - \\ [0ex]
 		\hline
 	\end{tabular}
 \end{table}
-
+\pagebreak
 \section[Popis prípadu použitia 2 - Zmena údajov databázy]{\rmfamily\bfseries
 	Popis prípadu použitia 2 - Zmena údajov databázy}
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{|>{\centering\arraybackslash}m{3in}|>{\centering\arraybackslash}m{3in}|}
 		\hline
-		\centering Označenie & popis \\ [0ex]
+		\centering Označenie & Popis \\ [0ex]
 		\hline
 		Popis & Administrátor navštívi podstránku, ktorá nieje dostupná bežným užívateľom (
 		užívateľ sa na ňu z hlavnej stránky nemá možnosť dostať žiadnym odkazom.) Administrátor
@@ -139,20 +147,64 @@ na základe svojich odborných výpočtov upraviť obsah stránky.
 		Opakovanosť & Niekoľkokrát za rok \\ [0ex]
 		\hline
 		Bežná cesta & 	\begin{itemize}
-							\item Administrátor navštívi špeciálnu podstránku ktorá nieje dostupná bežným užívateľom
-							\item Administrátor zadá svoje prístupové heslo
-							\item Po správnom zadaní hesla mu systém umožní prístup k zmene údajov databázy
-							\item Administrátor má možnosť nahrať na stránku súbor s údajmi o šírení infekčného ochorenia
-							\item Po úspešnom nahraní súbor (súbor má správny formát) sa aktualizujú informácie na hlavnej stránke
+							\item administrátor navštívi špeciálnu podstránku, ktorá nieje dostupná bežným užívateľom
+							\item administrátor zadá svoje prístupové heslo
+							\item po správnom zadaní hesla mu systém umožní prístup k zmene údajov databázy
+							\item administrátor má možnosť nahrať na stránku súbor s údajmi o šírení infekčného ochorenia
+							\item po úspešnom nahraní súboru (za predpokladu, že súbor má správny formát) sa aktualizujú informácie na hlavnej stránke
 						\end{itemize} \\ [0ex]
+					\hline
+	\end{tabular}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|>{\centering\arraybackslash}m{3in}|>{\centering\arraybackslash}m{3in}|}
 		\hline
 		Alternatívna cesta & - \\ [0ex]
 		\hline
-		Výnimky & - \begin{itemize}
-						\item Administrátor zadal nesprávne prístupové heslo - bude na to upozornený a dostane možnosť heslo zadať znova
-						\item Súbor nahraný na stránku je v nesprávnom formáte - administrátor na to bude upozornený, a bude mať možnosť nahrať iný súbor
+		Výnimky &\begin{itemize}
+						\item administrátor zadal nesprávne prístupové heslo, bude na to upozornený a dostane možnosť heslo zadať znova
+						\item súbor nahraný na stránku je v nesprávnom formáte, administrátor na to bude upozornený a bude mať možnosť nahrať iný súbor
 					\end{itemize} \\ [0ex]
 		\hline
+	\end{tabular}
+\end{table}
+
+\pagebreak
+\section[Popis prípadu použitia 3 - Zmena prístupového hesla]{\rmfamily\bfseries
+	Popis prípadu použitia 3 - Zmena prístupového hesla}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|>{\centering\arraybackslash}m{3in}|>{\centering\arraybackslash}m{3in}|}
+		\hline
+		\centering Označenie & Popis \\ [0ex]
+		\hline
+		Popis & Administrátor navštívi podstránku, ktorá nieje dostupná bežným užívateľom (
+		užívateľ sa na ňu z hlavnej stránky nemá možnosť dostať žiadnym odkazom.) Administrátor
+		zadá svoje prístupové heslo. Zobrazí sa mu možnosť zmeniť heslo. Po úspešnom zadaní pôvodného ako aj nového hesla a jeho potvrdenia sa heslo zmení.\\ [0ex]
+		\hline
+		Opakovanosť & Niekoľkokrát za rok \\ [0ex]
+		\hline
+		Bežná cesta & 	\begin{itemize}
+			\item administrátor navštívi špeciálnu podstránku, ktorá nieje dostupná bežným užívateľom
+			\item administrátor zadá svoje prístupové heslo
+			\item po správnom zadaní hesla mu systém umožní toto heslo zmeniť
+			\item administrátor zadá staré heslo, nové heslo dvakrát a systém ho zmení	
+		\end{itemize} \\ [0ex]
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|>{\centering\arraybackslash}m{3in}|>{\centering\arraybackslash}m{3in}|}
+			\hline
+			Alternatívna cesta & - \\ [0ex]
+			\hline
+			Výnimky &\begin{itemize}
+				\item administrátor zadal nesprávne pôvodné heslo, bude na to upozornený a dostane možnosť heslo zadať znova
+				\item užívateľ nezadal dvakrát to isté nové heslo, bude na to upozornený a dostane možnosť heslo zadať znova
+			\end{itemize} \\ [0ex]
+			\hline
 	\end{tabular}
 \end{table}
 
