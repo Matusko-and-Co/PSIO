@@ -7,7 +7,7 @@ V súèasnosti prebieha projekt APVV s lekárskou fakultou, kde sa zaoberáme predik
 
 ## Blízke termíny
 * kadá streda 11:30 - Stretnutia s cviciacim (Andrej Jursa)
-* [do 19.10.2015, 20:00 - Konceptuálna analıza](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/konceptualna_analyza.html)
+* [do 19.10.2015, 20:00 - Konceptuálna analıza](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/konceptualna_analyza.html), Ako písa [konceptuálnu analızu](http://dai.fmph.uniba.sk/courses/tvorbaIS/pr10/PCUcebne/Zaverecna_sprava.pdf) - strana 10.
 * <del>[do 12.10.2015, 20:00 - Katalóg poiadaviek](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/poziadavky.html), Ako písa [katalóg poiadaviek](http://dai.fmph.uniba.sk/courses/tvorbaIS/sl/tis2new.pdf).
 * <del>[do 5.10.2014, 20:00 - Odovzda plán projektu](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/plan.html)
 * <del>2.10 o 8:45 - Stretnutie so Zuzanou Chladnou
