@@ -38,23 +38,28 @@ Táto špecifikácia požiadaviek na softvér (ďalej ŠPS) popisuje používate
 
 \section[Rozsah projetku a funkcie systému]{\rmfamily\bfseries
 Rozsah projetku a funkcie systému}
-Výskyt niektorých infekčných chorôb je viazaný na určité oblasti (endemický výskyt). \\
-Tento projekt bude obsahovať animáciu šírenia infekcie v určitej oblasti (krajoch Slovenska). Taktiež bude obsahovať možnosť zmeniť údaje o infekcii. Úlohou softvéru je služiť ako ukážka na rôznych prezentáciách pre lepšiu ilustráciu. Systém predstavuje frontend a bude ho používať predovšetkým zadávateľ. 
+Šírenie infekčného ochorenia je podmienené mierou vnímavosti populácie na dané ochorenie. Významnú úlohu pri šírení infekčného ochorenia zohráva aj geografická heterogénnosť vnímavej populácie a migrácia obyvateľstva medzi regiónmi.\par
 
+Cieľom tohto projektu je prostredníctvom animácie na geografickej mape Slovenskej republiky, rozdelenej na kraje, priblížit širokej verejnosti časový priebeh rozšírenia vybraného infekčného ochorenia. Súčasťou softvéru bude možnost voľby zobrazovaného scenáru.  \par
+
+Softvér bude navrhutý tak, aby mohol slúžit najmä na prezentáciách ako ilustrácia výstupu epidemiologických modelov, čím uľahčí interpretáciu vedeckých výsledkov pre širokú verejnosť.\par
+
+Systém predstavuje frontend a bude ho používať predovšetkým zadávateľ.
+\pagebreak
 \section[Slovník pojmov, Skratky]{\rmfamily\bfseries
 	Slovník pojmov, Skratky}	
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{|>{\centering\arraybackslash}m{2in}|>{\centering\arraybackslash}m{1in}|}
-		\hline
-		\centering Pojem & vysvetlenie \\ [0ex]
-		\hline
-		predikcia & odhad vývoja, predpoveď \\ [0ex]
-		\hline
-		infekčné ochorenie & nákazlivé ochorenie spôsobené mikroorganizmami \\ [0ex]
-		\hline
-	\end{tabular}
-\end{table}
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|>{\centering\arraybackslash}m{2in}|>{\centering\arraybackslash}m{1in}|}
+			\hline
+			\centering Pojem & vysvetlenie \\ [0ex]
+			\hline
+			predikcia & odhad vývoja, predpoveď \\ [0ex]
+			\hline
+			infekčné ochorenie & nákazlivé ochorenie spôsobené mikroorganizmami \\ [0ex]
+			\hline
+		\end{tabular}
+	\end{table}
 
 \section[Odkazy]{\rmfamily\bfseries
 	Odkazy}
@@ -78,6 +83,7 @@ Užívateľ bude mať možnosť:
 	\item prehliadať mapu s predikciou šírenia infekčných chorôb	
 	\item spustiť, prerušiť a zastaviť animáciu
 	\item manuálne posunúť animáciu na konkrétne obdobie
+	\item zmeniť rýchlosť animácie
 \end{itemize}
 Administrátor bude mať možnosť:
 \begin{itemize}
@@ -122,6 +128,7 @@ na základe svojich odborných výpočtov upraviť obsah stránky.
 							\item zvolí jednu z možností užívateľského rozhrania - „spustiť animáciu“
 							\item systém spustí animáciu v grafickom okne
 							\item užívateľ má ďalej možnosť animáciu zastaviť, prerušiť a znovu spustiť
+							\item užívateľ má možnosť nastaviť rýchlosť animácie
 						\end{itemize} \\ [0ex]
 		\hline
 		Alternatívna cesta & - \\ [0ex]
