@@ -9,6 +9,7 @@
 \usepackage{fullpage}
 \usepackage{indentfirst}
 \usepackage{array}
+\usepackage{caption}
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.png,.jpg}
 
@@ -119,8 +120,18 @@ Táto  časť  bude  venovaná približnému  grafickému  opisu užívateľské
 
 \subsection[Stavový diagram]{\rmfamily\bfseries
 	Stavový diagram}
+Tento diagram ukazuje jednotlivé stavy a ich zmeny v troch situáciách:
+\begin{itemize}
+	\item prezeranie prezentácie
+	\item zmena hesla,
+	\item zmena údajov, z ktorých sa vytvára animácia.
+\end{itemize}
+\begin{figure}[htb]
+	\includegraphics[scale=0.6]{Stavovy_diagram}
+	\caption{Stavový diagram}
+	\label{subsection:Stavový diagram}
+\end{figure}
 
-\includegraphics[scale=0.6]{Stavovy_diagram}
 
 \subsection[Use case diagram]{\rmfamily\bfseries
 	Use case diagram}
