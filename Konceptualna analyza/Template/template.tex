@@ -11,6 +11,7 @@
 \usepackage{array}
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage{placeins}
 \DeclareGraphicsExtensions{.png,.jpg}
 
 \begin{document}
@@ -41,7 +42,13 @@ Táto  časť  bude  venovaná približnému  grafickému  opisu užívateľské
 \subsection[Hlavná stránka]{\rmfamily\bfseries
 	Hlavná stránka}
 
-\includegraphics[scale=0.7]{hl_stranka}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.55]{hl_stranka}
+	\caption{Hlavná stránka}
+	\label{fig:Hlavná stránka}
+\end{figure}
+
 
 \begin{table}[h!]
 	\centering
@@ -70,11 +77,18 @@ Táto  časť  bude  venovaná približnému  grafickému  opisu užívateľské
 
 	\end{tabular}
 \end{table}
-
+\FloatBarrier
+\pagebreak
 \subsection[Prihlásenie]{\rmfamily\bfseries
 	Prihlásenie}
 
-\includegraphics[scale=0.7]{prihlasenie}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.6]{prihlasenie}
+	\caption{Prihlásenie}
+	\label{fig:Prihlásenie}
+\end{figure}
+
 
 \begin{table}[h!]
 	\centering
@@ -88,11 +102,16 @@ Táto  časť  bude  venovaná približnému  grafickému  opisu užívateľské
 		\hline
 	\end{tabular}
 \end{table}
-
+\FloatBarrier
 \subsection[Administrácia]{\rmfamily\bfseries
 	Administrácia}
 
-\includegraphics[scale=0.7]{admin}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{admin}
+	\caption{Administrácia}
+	\label{fig:Administrácia}
+\end{figure}
 
 \begin{table}[h!]
 	\centering
@@ -112,6 +131,7 @@ Táto  časť  bude  venovaná približnému  grafickému  opisu užívateľské
 		\hline
 	\end{tabular}
 \end{table}
+\FloatBarrier
 \pagebreak
 \section[Možnosti užívateľa]{\rmfamily\bfseries
 	Možnosti užívateľa}
@@ -127,20 +147,35 @@ Tento diagram ukazuje jednotlivé stavy a ich zmeny v troch situáciách:
 	\item zmena údajov, z ktorých sa vytvára animácia.
 \end{itemize}
 \begin{figure}[htb]
-	\includegraphics[scale=0.6]{Stavovy_diagram}
+	\centering
+	\includegraphics[scale=0.5]{Stavovy_diagram}
 	\caption{Stavový diagram}
-	\label{subsection:Stavový diagram}
+	\label{fig:Stavový diagram}
 \end{figure}
-
-
+\FloatBarrier
+\clearpage
 \subsection[Use case diagram]{\rmfamily\bfseries
 	Use case diagram}
 
-\includegraphics[scale=0.6]{use_case_diagram}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.6]{use_case_diagram}
+	\caption{Use case diagram}
+	\label{fig:Use case diagram}
+\end{figure}
 
+
+\FloatBarrier
+\clearpage
 \subsection[Entito-relačný diagram]{\rmfamily\bfseries
 	Entito-relačný diagram}
 
-\includegraphics[scale=0.6]{E-R_diagram}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.7]{E-R_diagram}
+	\caption{Entito-relačný diagram}
+	\label{fig:Entito-relačný diagram}
+\end{figure}
 
+\FloatBarrier
 \end{document}
