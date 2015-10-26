@@ -38,9 +38,6 @@
 \section[Možné použité technológie a postupy]{\rmfamily\bfseries
 	Možné použité technológie a postupy}
 
-\subsection[Prístupy]{\rmfamily\bfseries
-	Prístupy}
-
 \subsection[Technológie]{\rmfamily\bfseries
 	Technológie}
 Na strane servera sme sa rozhodli použiť server nginx a PHP. Nginx preto, lebo nie je tak robustný, je stále pravidelne podporovaný a taktiež nezávislý od jedného operačného systému. PHP sme zvolili kvôli jednoduchosti, ľahkému nasadeniu, osobnej preferencie a skúsenosti a vzhľadom na jednoduchosť nie je potrebné hľadieť na rýchlosť do detailov. Na čítanie súborov z excelu použijeme voľne dostupnú knižnicu PHPExcel.
@@ -61,6 +58,11 @@ Prichádzajúce HTTP požiadavky vyhodnotí najprv nginx server a následne PHP.
 
 \section[Domain model diagram]{\rmfamily\bfseries
 	Domain model diagram}
+\begin{figure}[htb]
+\includegraphics[scale=0.5]{Domain_model_diagram}
+\caption[Domain model diagram]{Domain model diagram}
+ \label{fig:Domain model diagram}
+\end{figure}
 
 
 \end{document}
