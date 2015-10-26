@@ -42,8 +42,9 @@
 	Technológie}
 Na strane servera sme sa rozhodli použiť server nginx a PHP. Nginx preto, lebo nie je tak robustný, je stále pravidelne podporovaný a taktiež nezávislý od jedného operačného systému. PHP sme zvolili kvôli jednoduchosti, ľahkému nasadeniu, osobnej preferencie a skúsenosti a vzhľadom na jednoduchosť nie je potrebné hľadieť na rýchlosť do detailov. Na čítanie súborov z excelu použijeme voľne dostupnú knižnicu PHPExcel.
 \par
-Na strane klienta použije HTML5 a CSS3 na layout. Okrem toho použijeme JavaScript a knižnicu jQuery spolu s nadstavbou pre validáciu pre komfortnejšie užívateľské rozhranie. Tieto technológie sme zvolili vzhľadom na rozšírenosť, osobnú preferenciu a skúsenosť. \par
-Na vykreslenie mapy použijeme Google Map API v3
+Na strane klienta použije HTML5 a CSS3 na layout. Okrem toho použijeme JavaScript a knižnicu jQuery spolu s nadstavbou pre validáciu pre komfortnejšie užívateľské rozhranie. Tieto technológie sme zvolili vzhľadom na rozšírenosť, osobnú preferenciu a skúsenosť. 
+\par
+Na vykreslenie mapy použijeme Google Map API v3. Je to najrozšírenejšie maps API, ktoré nám ponúka presne tú funkcionalitu, ktorú potrebujeme.
 \pagebreak
 
 \section[Deployment diagram]{\rmfamily\bfseries
@@ -58,6 +59,7 @@ Prichádzajúce HTTP požiadavky vyhodnotí najprv nginx server a následne PHP.
 
 \section[Domain model diagram]{\rmfamily\bfseries
 	Domain model diagram}
+Administrátor (zadávateľ) uploadne na stránku .xls súbor, ktorý server spracuje, a uloží si z neho dáta. Štruktúra uloženého údaju - počet ochorených / deň / kraj Slovenska. Server spracuje požiadavky od užívateľa a pošle statický obsah stránky. Webová stránka následne zobrazí animáciu pre užívateľa.
 \begin{figure}[htb]
 \includegraphics[scale=0.5]{Domain_model_diagram}
 \caption[Domain model diagram]{Domain model diagram}
