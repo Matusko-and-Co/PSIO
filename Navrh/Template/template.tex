@@ -82,8 +82,7 @@ Atribúty:
 Metódy
 \begin{itemize}
 	\item changePassword(\$oldPassword, \$newPassword, \$newPasswordCheck) – Zmení heslo administrátora, ak je staré heslo správne a ak sú obe nové heslá rovnaké, inak vyhodí error.
-	\item uploadFile(\$file) – Prepíše údaje z excel súboru do obyčajného súboru a zapíše ho na disk.
-	\item loadData() – Prečíta údaje z uloženého súboru a pošle ich ako JSON object.
+	\item uploadFile(\$file) – Prepíše údaje z excel súboru do JSON súboru a zapíše ho na disk..
 \end{itemize}
 
 \subsection[Trieda Passwd]{\rmfamily\bfseries
@@ -109,7 +108,7 @@ Metódy
 	Trieda GetDataFromServer}
 Metódy
 \begin{itemize}
-	\item getDataFromServeromFile() – Získa údaje zo servera pomocou AJAXU a vytvorí z nich dvojrozmerné pole, ktoré vráti.
+	\item getDataFromServeromFile(successListener, errorListener) – Získa údaje zo servera GET požiadavkou. Dva parametre predstavujú funkcia, čo robiť, ak sme údaje získali úspešne resp. neúspešne.
 \end{itemize}
 
 \end{document}
