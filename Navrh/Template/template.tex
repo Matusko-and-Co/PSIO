@@ -66,6 +66,16 @@ Administrátor (zadávateľ) uploadne na stránku .xls súbor, ktorý server spr
  \label{fig:Domain model diagram}
 \end{figure}
 
+\section[Data model]{\rmfamily\bfseries
+	Data model}
+Administrátor (zadávateľ) uploadne na stránku .xls alebo .xlsx súbor, ktorý server spracuje. Server dáta prekonvertuje do formátu json. Následne ich uloží do .json súboru, ktorý sa nachádza na serveri. Relatívna cesta k súboru: ../data/data.json
+\begin{figure}[htb]
+	\includegraphics[scale=0.5]{data_model}
+	\caption[Data model]{Data model}
+	\label{fig:Data model}
+\end{figure}
+
+
 \renewcommand{\chaptername}{}	
 \chapter[Návrh]{\rmfamily\bfseries
 	Návrh}
@@ -110,5 +120,15 @@ Metódy
 \begin{itemize}
 	\item getDataFromServeromFile(successListener, errorListener) – Získa údaje zo servera GET požiadavkou. Dva parametre predstavujú funkcia, čo robiť, ak sme údaje získali úspešne resp. neúspešne.
 \end{itemize}
+
+\section[Data flow diagram]{\rmfamily\bfseries
+	Data flow diagram}
+	Diagram graficky znázornuje toky údajov prúdiace cez informačný systém. Vizualizuje proces spracovávania údajov.
+	
+	\begin{figure}[htb]
+		\includegraphics[scale=0.5]{data_flow}
+		\caption[Data flow diagram]{Data flow diagram}
+		\label{fig:Data flow diagram}
+	\end{figure}
 
 \end{document}
