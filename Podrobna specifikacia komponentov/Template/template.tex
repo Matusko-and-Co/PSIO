@@ -259,6 +259,23 @@ Metódy
 	\item comparePasswords(\$passwd) – Porovná zadané heslo s heslom zo súboru.
 \end{itemize}
 
+\subsection[Trieda Map]{\rmfamily\bfseries
+	Trieda Map}
+
+Metódy
+\begin{itemize}
+	\item initialize() – Zobrazenie mapy a inicializácia hodnôt.
+	\item mapPaint() – Zafarbenie jednotlivých krajov slovenska na mape.
+	\item mapThread() – Spravovanie multithreadingu pre beh animácie.
+	\item mapStart() – Spustenie animácie.
+	\item mapPause() – Pozastavenie animácie.
+	\item mapStop() – Zastavenie animácie a pretočenie na začiatok.
+	\item mapNext() – Prechod na další obrázok animácie.
+	\item mapPrevious() – Prechod na predcháchadzajúci obrázok animácie.
+	\item mapFast() – Zrýchlenie animácie.
+	\item mapSlow() – Spomalenie animácie.
+\end{itemize}
+
 \section[Triedy typu radič]{\rmfamily\bfseries
 	Triedy typu radič}
 
@@ -360,6 +377,44 @@ Metódy
 \textbf{Výstup:} Zobrazenie chybovej hlášky.\linebreak
 \textbf{Otestované:} Nie.\linebreak
 \end{flushleft}
-\section[Pustenie animácie]{\rmfamily\bfseries
-	Pustenie animácie}
+
+\section[Spustenie animácie]{\rmfamily\bfseries
+	Spustenie animácie}
+\begin{flushleft}
+	\textbf{Vstup:} Kliknutie na tlačidlo spustenia animácie.\linebreak
+	\textbf{Výstup:} Animácia beží.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+	\linebreak
+	\textbf{Vstup:} Kliknutie na tlačidlo prerušenia animácie.\linebreak
+	\textbf{Výstup:} Animácia sa preruší.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+	\linebreak
+	\textbf{Vstup:} Kliknutie na tlačidlo zastavenia animácie.\linebreak
+	\textbf{Výstup:} Animácia sa zastaví a pretočí na začiatok.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+	\linebreak
+	\textbf{Vstup:} Kliknutie na tlačidlo zrýchlenia animácie.\linebreak
+	\textbf{Výstup:} Animácia sa zrýchli.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+	\linebreak
+	\textbf{Vstup:} Kliknutie na tlačidlo spomalenia animácie.\linebreak
+	\textbf{Výstup:} Animácia spomalí.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+	\linebreak
+	\textbf{Vstup:} Kliknutie na tlačidlo prechodu na další obrázok animácie.\linebreak
+	\textbf{Výstup:} Zobrazí sa další obrázok animácie.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+	\linebreak
+	\textbf{Vstup:} Kliknutie na tlačidlo prechodu na predchádzajúci obrázok animácie.\linebreak
+	\textbf{Výstup:} Zobrazí sa predchádzajúci obrázok animácie.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+	\linebreak
+	\textbf{Vstup:} Používateľ si chce pozrieť deň, pre ktorý animácia aktuálne zobrazuje štatistické údaje.\linebreak
+	\textbf{Výstup:} Dátum a obrázok prislúchajúci k dátumu sedia.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+	\linebreak
+	\textbf{Vstup:} Používateľ si chce pozrieť štatistiku pre jednotlivé kraje.\linebreak
+	\textbf{Výstup:} Na mape sa zobrazuje slovensko s farebne odlíšenými krajmi. Farby krajov sú určené na základe počtu percent nakazených v danom kraji. Na ploche kraja sa zobrazuje názov kraja a počet percent nakazených.\linebreak
+	\textbf{Otestované:} Nie.\linebreak
+\end{flushleft}
 \end{document}
