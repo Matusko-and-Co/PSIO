@@ -2,7 +2,7 @@
 	<h1>Administrácia</h1>
 </header>
 <main>
-	<div id="mainContent">
+
 
 <?php
 	require('./php/Passwd.php');
@@ -25,29 +25,32 @@
 			$admin->uploadFile($_FILES['newData']);
 		}
 ?>
-				<p class="skript">
-				— súbor musí byť vo formáte .xls alebo .xlsx<br />
-				— súbot musí mať maximálne 1 MB
+				<p class="skript" id="fileHint">
+				- súbor musí byť vo formáte .xls alebo .xlsx<br />
+				- súbot musí mať maximálne 1 MB
 				</p>
 
 				<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=sefovica" enctype="multipart/form-data" id="fileForm">
-					<input type="file" name="newData" />
+					<input type="file" name="newData" /><br>
 					<input type="submit" name="submitData" id="submitData" value="Nahrať dáta" />
 				</form>
-				
-				<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=sefovica" id="passwordInputs">
-					<label for="oldPassword">Zadajte staré heslo: </label><input type="password" name="oldPassword" id="oldPassword" />
-					<label for="newPassword">Zadajte nové heslo: </label><input type="password" name="newPassword" id="newPassword" />
-					<label for="newPasswordCheck">Zadajte nové heslo ešte raz: </label><input type="password" name="newPasswordCheck" id="newPasswordCheck" />
-					<input type="submit" name="changePassword" id="changePassword" value="Zmeniť heslo" />
-				</form>
+
+				<div id="changePass">
+					<h2>Zmena hesla</h2>
+					<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=sefovica" id="passwordInputs">
+						<label for="oldPassword">Zadajte staré heslo: </label><input type="password" name="oldPassword" id="oldPassword" /><br>
+						<label for="newPassword">Zadajte nové heslo: </label><input type="password" name="newPassword" id="newPassword" /><br>
+						<label for="newPasswordCheck">Zadajte nové heslo ešte raz: </label><input type="password" name="newPasswordCheck" id="newPasswordCheck" /><br>
+						<input type="submit" name="changePassword" id="changePassword" value="Zmeniť heslo" />
+					</form>
+				</div>
 <?php
 	else:
 ?>
 				<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=sefovica" enctype="multipart/form-data">
 					<p class="skript">
-						<label for="password">Zadajte heslo: </label><br />
-						<input type="password" name="password" id="password" />
+						<label for="password">Zadajte heslo: </label>
+						<input type="password" name="password" id="password" /><br>
 						<input type="submit" name="passwordSubmit" value="Potvrdiť" />
 					</p>
 				</form>
@@ -55,5 +58,5 @@
 endif;
 ?>
 
-	</div>
+
 </main>

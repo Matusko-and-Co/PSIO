@@ -1,3 +1,7 @@
+body{
+	background-color: mintcream;
+}
+
 .ttError{
 	color:red;
 	border-color:red;
@@ -44,7 +48,7 @@ input[type=range]{
 	margin-bottom: 20px;
 }
 
-input[type=button],input[type=submit],input[type=password] {
+input[type=button],input[type=submit],input[type=password]{
 	border-radius: 4px;
 	background-color: #fff;
 }
@@ -54,5 +58,33 @@ main,header,footer{
 }
 #map{
 	margin-top: 20px;
-	margin-left: 30px;
+	margin-left: 60px;
+}
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow:hidden;
+}
+
+#changePass label {
+	display: inline-block;
+	width: 180px;
+	text-align: right;
+	margin-right: 10px;
+}?
+
+ input[type=file] {
+	 background-color: #fff;
+ }
+ #changePass{
+	 margin-top: 80px;
+ }
+ #fileHint{
+	 display: inline-block;
+	 text-align: left;
+ }
+input[type=submit]{
+	margin-top: 10px;
 }
