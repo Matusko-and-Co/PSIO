@@ -7,7 +7,9 @@ V súèasnosti prebieha projekt APVV s lekárskou fakultou, kde sa zaoberáme predik
 
 ## Blízke termíny
 * kadá streda 11:30 - Stretnutia s cviciacim (Andrej Jursa)
-* [do 18.11.2015, 20:00 Hotové komponenty, 1. verzia](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/komponenty.html)
+* [do 2.12.2015, 20:00 Integrované dielo s dokumentáciou](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/dielo.html)
+* <del>[do 25.11.2015, 20:00 Hotové komponenty s dokumentáciou](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/komponenty.html)
+* <del>[do 18.11.2015, 20:00 Hotové komponenty, 1. verzia](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/komponenty.html)
 * <del>[do 11.11.2015, 20:20 Podrobná špecifikácia komponentov](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/specifikacia_komponentov.html)
 * <del>[do 4.11.2015, 12:20 Návrh](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/navrh.html), Ako písa [návrh](http://dai.fmph.uniba.sk/courses/tvorbaIS/pr10/PCUcebne/Zaverecna_sprava.pdf) - strana 25. Súèastou tohto dokumentu je aj konceptuálna analıza a anlıza technológii.
 * <del>[do 26.10.2015, 20:00 Analıza technológií, dekompozícia a dátovı model](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/analyza_a_dekompozicia.html)
