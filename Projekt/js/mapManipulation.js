@@ -45,7 +45,7 @@ function updateRegionTextAndColor(row){
     else if (row[i] > 10) color = "#779422";
     else color = "#55a522";
     document.getElementById(i).style.fill = color;
-    document.getElementById("text"+i+"%").innerHTML = row[i];
+    document.getElementById("text"+i).innerHTML = row[i]+"%";
   }
 }
 
