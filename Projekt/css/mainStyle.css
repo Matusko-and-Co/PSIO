@@ -38,3 +38,21 @@
 .ui-helper-hidden-accessible{
 	display: none;
 }
+
+input[type=range]{
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+input[type=button],input[type=submit],input[type=password] {
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+main,header,footer{
+	text-align: center;
+}
+#map{
+	margin-top: 20px;
+	margin-left: 30px;
+}
