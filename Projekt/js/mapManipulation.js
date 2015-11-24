@@ -1,13 +1,13 @@
-var currentMapSample = 0;
-var mapData;
-var running = 0; // 0-> animacia nebezi, 1-> animacia bezi dopredu, -1 -> dozadu
-var interval; // rychlost animacie (interval v ms medzi volaniami runAnimation)
-var rangeInput;
+var currentMapSample = 0; // momentálne zobrazený snímok mapy
+var mapData; // dvojrozmerné pole, uchováva údaje získané z JSON súboru
+var running = 0; // 0-> animacia nebeží, 1-> animácia beží dopredu, -1 -> dozadu
+var interval; // rýchlosť animácie (interval v ms medzi volaniami runAnimation)
+var rangeInput; //HTML element rangeInput, slider na nastavenie snímku
 
 
 /* Získa dáta zo servera.
 *	@successListener - funkcia, čo má robiť aj bola požiadavka úspešná
-*	@errorListener - funkcia, čo má robiť aj bola požiadavka neúspešná
+*	@errorListener - funkcia, čo má robiť ak bola požiadavka neúspešná
 */
 function getDataFromServer(successListener, errorListener){
   jQuery.ajax({
@@ -27,11 +27,12 @@ function getDataFromServer(successListener, errorListener){
   });
 }
 
-/* Nastavi farbu mapy
-* @row - riadok matice, v ktorom je 8 hodnot percentualneho poctu nakazenych
-*        podla krajov (bude treba zoradit HTML, aby to sedelo so vstupom)
+/*
+* Nastaví farbu mapy
+* @row - riadok matice, v ktorom je 8 hodnôt percentuálneho počtu nakazených
+*        podľa krajov
 */
-function updateRegionColor(row){
+function updateRegionTextAndColor(row){
   for (i = 0; i < row.length; i++){
     if (row[i] > 90) newColor = "#ff2b2b";
     else if (row[i] > 80) color = "#ec3e28";
@@ -44,16 +45,24 @@ function updateRegionColor(row){
     else if (row[i] > 10) color = "#779422";
     else color = "#55a522";
     document.getElementById(i).style.fill = color;
+    document.getElementById("text"+i).innerHTML = row[i];
   }
 }
 
+/*
+* Zastaví animáciu
+*/
 function stopAnimation(){
   running = 0;
 }
 
+/*
+* Inicializuje mapu
+* Zaktívni prvky ovládania mapy
+*/
 function initializeMap(data, textStatus, jqXHR){
   mapData = data;
-  updateRegionColor(mapData[0]);
+  updateRegionTextAndColor(mapData[0]);
 
   var mapControls = document.getElementsByClassName("mapControl");
   for (i = 0; i < mapControls.length; i++) {
@@ -64,6 +73,10 @@ function initializeMap(data, textStatus, jqXHR){
   rangeInput.value = 0;
 }
 
+/*
+* Posunie mapu o 1 snimok
+* @direction smer, ktorým sa má pohnúť
+*/
 function changeMapManually(direction){
   direction = parseInt(direction);
   move = currentMapSample + direction
@@ -73,10 +86,14 @@ function changeMapManually(direction){
   else{
     currentMapSample = move;
     rangeInput.value = currentMapSample;
-    updateRegionColor(mapData[currentMapSample]);
+    updateRegionTextAndColor(mapData[currentMapSample]);
   }
 }
 
+/*
+* Reprezentuje beh animácie
+* Rekurzívne volá sama seba s daným časovým intervalom
+*/
 function runAnimation(){
   if (running == 1){
     if (currentMapSample == mapData.length-1){
@@ -87,7 +104,7 @@ function runAnimation(){
     rangeInput.value = currentMapSample;
     setTimeout(function() {
         requestAnimationFrame(runAnimation);
-        updateRegionColor(mapData[currentMapSample]);
+        updateRegionTextAndColor(mapData[currentMapSample]);
     }, interval);
   }
   if (running == -1){
@@ -99,16 +116,23 @@ function runAnimation(){
     rangeInput.value = currentMapSample;
     setTimeout(function() {
         requestAnimationFrame(runAnimation);
-        updateRegionColor(mapData[currentMapSample]);
+        updateRegionTextAndColor(mapData[currentMapSample]);
     }, interval);
   }
 }
 
+/*
+* Nastaví mapu na konrkétny snímok
+* @value číslo snímky, ktorá sa má zobraziť
+*/
 function setSample(value){
   currentMapSample = value;
-  updateRegionColor(mapData[currentMapSample]);
+  updateRegionTextAndColor(mapData[currentMapSample]);
 }
 
+/*
+* Spustí animáciu dopredu
+*/
 function startAnimation(){
   if (running == -1){
     running = 1;
@@ -120,6 +144,9 @@ function startAnimation(){
   }
 }
 
+/*
+* Spustí animáciu dozadu
+*/
 function reverseAnimation(){
   if (running == 1){
     running = -1;
@@ -131,21 +158,32 @@ function reverseAnimation(){
   }
 }
 
+/*
+* Zvýši rýchlosť animácie (x2)
+*/
 function increaseAnimationSpeed(){
   interval /= 2;
 }
 
+/*
+* Zníži rýchlosť animácie (x0.5)
+*/
 function decreaseAnimationSpeed(){
   interval *= 2;
 }
 
 /*
-* Funkcia spracuje chybu (ak nebolo ziskanie JSON udajov zo servera uspesne)
+* Funkcia spracuje chybu (ak nebolo ziskanie JSON údajov zo servera úspešné)
 */
 function handleError(){
   alert("error");
 }
 
+/*
+* Naloaduje mapu zo servera volaním funkcia getDataFromServer
+* Ak je volanie úspešné, pokračuje volaním initializeMap
+* V opačnom prípade volá funkciu handleError
+*/
 function loadMap(){
   getDataFromServer(initializeMap, handleError);
 }
