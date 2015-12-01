@@ -1,16 +1,16 @@
 ﻿<?php
 	//nastartovanie session v php
 	session_start();
-
+	
 	date_default_timezone_set("Europe/Bratislava");
-
+	
 	//rychla kontrola, aby sa predislo hijacku
 	if(isset($_SESSION['PREV_USER_AGENT']) && $_SESSION['PREV_USER_AGENT'] != $_SERVER['HTTP_USER_AGENT']){
 		session_destroy();
 		$params = session_get_cookie_params();
 		setcookie(session_name(), '', time() - 5000, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
 		session_start();
-
+		
 		session_regenerate_id();
 	}
 	$_SESSION['PREV_USER_AGENT'] = $_SERVER['HTTP_USER_AGENT'];
@@ -21,7 +21,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Predikcia šírenie infekčných ochorení</title>
-
+		
 		<link rel="stylesheet" href="css/mainStyle.css" />
 
 		<script src="js/jquery/jquery-2.1.4.min.js"></script>

@@ -11,7 +11,7 @@ var rangeInput; //HTML element rangeInput, slider na nastavenie snímku
 */
 function getDataFromServer(successListener, errorListener){
   jQuery.ajax({
-    url: 'data/data.json',
+    url: 'data.json',
     contentType: "application/json",
     success: function(data, textStatus, jqXHR){
       var i,j;

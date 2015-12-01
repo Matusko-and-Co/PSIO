@@ -20,7 +20,6 @@
 			if($passwd->comparePasswords($oldPassword)){
 				if(strlen($newPassword) > 0 && $newPassword == $newPasswordCheck){
 					$passwd->createNewPassword($newPassword);
-					echo "<div>Heslo úspešne zmenené!</div>";
 				}else{
 					echo "<div class=\"error\">Nové heslá sa nezhodujú!</div>";
 				}
@@ -46,13 +45,12 @@
 				
 				$temp = array();
 				
-				for($i = 3; $i <= count($sheetData); $i++){
+				for($i = 1; $i <= count($sheetData); $i++){
 					if($sheetData[$i]['A'] == ''){
 						break;
 					}
 					
-					$temp[] = array(0 => trim($sheetData[$i]['A']), 1 => trim($sheetData[$i]['F']), 2 => trim($sheetData[$i]['E']), 3 => trim($sheetData[$i]['C']),
-					4 => trim($sheetData[$i]['D']), 5 => trim($sheetData[$i]['B']), 6 => trim($sheetData[$i]['H']), 7 => trim($sheetData[$i]['G']));
+					$temp[] = array(0 => trim($sheetData[$i]['A']), 1 => trim($sheetData[$i]['B']), 2 => trim($sheetData[$i]['C']));
 				}
 				
 				$file = fopen(self::FILE, "w") or die("Nepodarilo sa otvoriť súbor!");
@@ -60,10 +58,6 @@
 				fwrite($file, json_encode($temp));
 				
 				fclose($file);
-				
-				echo "<div>Dáta úspešne zmenené!</div>";
-			}else{
-				echo "<div class=\"error\">Súbor nemá správny formát alebo je príliš veľký!</div>";
 			}
 		}
 	}

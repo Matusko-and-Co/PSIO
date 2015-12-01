@@ -2,7 +2,7 @@
 	<h1>Administrácia</h1>
 </header>
 <main>
-
+	<div id="mainContent">
 
 <?php
 	require('./php/Passwd.php');
@@ -12,6 +12,8 @@
 		$passwordChecker = new Passwd();
 		if($passwordChecker->comparePasswords($_POST['password'])){
 			$_SESSION['allowedAdministration'] = 1;
+		}else{
+			echo "<div class=\"error\">Zadali ste zlé staré heslo!</div>";
 		}
 	}
 	// Ak som prihlaseny, ak odoslem formular na zmenu hesla, zmeni sa heslo, inak sa uploadne subor.
@@ -26,21 +28,21 @@
 		}
 ?>
 				<p class="skript" id="fileHint">
-				- súbor musí byť vo formáte .xls alebo .xlsx<br />
-				- súbot musí mať maximálne 1 MB
+				— súbor musí byť vo formáte .xls alebo .xlsx<br />
+				— súbot musí mať maximálne 1 MB
 				</p>
 
 				<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=sefovica" enctype="multipart/form-data" id="fileForm">
-					<input type="file" name="newData" /><br>
+					<input type="file" name="newData" /><br />
 					<input type="submit" name="submitData" id="submitData" value="Nahrať dáta" />
 				</form>
-
+				
 				<div id="changePass">
 					<h2>Zmena hesla</h2>
-					<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=sefovica" id="passwordInputs">
-						<label for="oldPassword">Zadajte staré heslo: </label><input type="password" name="oldPassword" id="oldPassword" /><br>
-						<label for="newPassword">Zadajte nové heslo: </label><input type="password" name="newPassword" id="newPassword" /><br>
-						<label for="newPasswordCheck">Zadajte nové heslo ešte raz: </label><input type="password" name="newPasswordCheck" id="newPasswordCheck" /><br>
+					<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=sefovica" id="passwordInputs"><br />
+						<label for="oldPassword">Zadajte staré heslo: </label><input type="password" name="oldPassword" id="oldPassword" /><br />
+						<label for="newPassword">Zadajte nové heslo: </label><input type="password" name="newPassword" id="newPassword" /><br />
+						<label for="newPasswordCheck">Zadajte nové heslo ešte raz: </label><input type="password" name="newPasswordCheck" id="newPasswordCheck" /><br />
 						<input type="submit" name="changePassword" id="changePassword" value="Zmeniť heslo" />
 					</form>
 				</div>
@@ -50,7 +52,7 @@
 				<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=sefovica" enctype="multipart/form-data">
 					<p class="skript">
 						<label for="password">Zadajte heslo: </label>
-						<input type="password" name="password" id="password" /><br>
+						<input type="password" name="password" id="password" /><br />
 						<input type="submit" name="passwordSubmit" value="Potvrdiť" />
 					</p>
 				</form>
@@ -58,5 +60,5 @@
 endif;
 ?>
 
-
+	</div>
 </main>

@@ -1,0 +1,94 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage[slovak]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fullpage}
+\usepackage{indentfirst}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{placeins}
+\DeclareGraphicsExtensions{.png,.jpg}
+
+\begin{document}
+\begin{titlepage}
+\centering\bfseries
+		Fakulta matematiky, fyziky a informatiky\\Univerzita Komenského v Bratislave	
+	\vspace*{\stretch{2.0}}
+
+	\fontsize{23}{28}\textbf{Špecifikácia požiadaviek na softvér}\\
+	\vspace*{\stretch{0.05}}
+	\fontsize{16}{22}\textbf{Predikcia šírenia infekčných ochorení}\\
+	\vspace*{\stretch{0.2}}
+	\large\textit{Matúš Čongrády\\Tibor Hanesz\\Jonatan Foltyn\\Katarína Šimnová}
+
+	\vspace*{\stretch{2.0}}
+\end{titlepage}\bigskip
+	\setcounter{tocdepth}{9}
+	\tableofcontents
+	
+\renewcommand{\chaptername}{}	
+	\chapter[Používateľská príručka]{\rmfamily\bfseries
+Používateľská príručka}
+
+
+\section[Administrácia]{\rmfamily\bfseries
+	Administrácia}
+Prístup do administrácie majú len tí, ktorí poznajú špeciálny link a heslo.
+
+\subsection[Zadanie hesla]{\rmfamily\bfseries
+	Zadanie hesla}
+
+Po zadaní hesla a stlačení tlačidla „Potvrdiť“ prebehne autorizácie. Pokiaľ je heslo správne stránka prejde na administrácia, pokiaľ nie, zobrazí sa o tom chybová hláška.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.9]{pristup}
+	\caption{Prístup do administrácia}
+	\label{fig:Prístup do administrácia}
+\end{figure}
+\pagebreak
+\subsection[Zmena dát]{\rmfamily\bfseries
+	Zmena dát}
+
+Po stlačení tlačidla „Browse...“, vybratia príslušného súboru a stlačení tlačidla „Nahrať dáta“ sa nahrajú nové dáta na server. Pokiaľ je to xls alebo xlsx súbor a je menší ako 1 megabajt dáta sa úspešne zmenia, inak o tom vybehne chybová hláška.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=1]{upload}
+	\caption{Zmena dát}
+	\label{fig:Zmena dát}
+\end{figure}
+
+\subsection[Zmena hesla]{\rmfamily\bfseries
+	Zmena hesla}
+
+Po zadaní pôvodného heslo a nového hesla dvakrát a stlačení tlačidla „Zmeniť heslo“ sa zmení heslo, pokiaľ sú zadané dáta správne. Inak o tom bude užívateľ informovaný chybovou hláškou.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=1]{heslo}
+	\caption{Zmena hesla}
+	\label{fig:Zmena hesla}
+\end{figure}
+
+
+\renewcommand{\chaptername}{}	
+\chapter[Inštalačná príručka]{\rmfamily\bfseries
+	Inštalačná príručka}
+
+\section[Systémové požiadavky]{\rmfamily\bfseries
+	Systémové požiadavky}
+Server s nginx a PHP servermi.
+
+\section[Inštalácia]{\rmfamily\bfseries
+	Inštalácia}
+\begin{itemize}
+	\item Celý obsah zip súboru treba skopírovať do www zložky na serveri, na ktorom bude aplikácia umiestnená.
+\end{itemize}
+
+\end{document}
