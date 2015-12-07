@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: mapManipulation.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: mapManipulation.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>var currentMapSample = 0; // momentálne zobrazený snímok mapy
+var mapData; // dvojrozmerné pole, uchováva údaje získané z JSON súboru
+var running = 0; // 0-> animacia nebeží, 1-> animácia beží dopredu, -1 -> dozadu
+var interval; // rýchlosť animácie (interval v ms medzi volaniami runAnimation)
+var rangeInput; //HTML element rangeInput, slider na nastavenie snímku
+
+/**
+ * Získa dáta zo servera.
+ * @param successListener definuje čo sa vykoná po úspešnom vykonaní požiadavky
+ * @param errorListener definuje čo sa vykoná po neúspešnom vykonaní požiadavky
+ */
+function getDataFromServer(successListener, errorListener){
+  jQuery.ajax({
+    url: 'data.json',
+    contentType: "application/json",
+    success: function(data, textStatus, jqXHR){
+      var i,j;
+      for(i = 0; i &lt; data.length; i++){
+        for(j = 0; j &lt; data[0].length; j++){
+          data[i][j] = parseFloat(data[i][j]);
+        }
+      }
+      successListener(data, textStatus, jqXHR);
+    },
+    error: errorListener,
+    dataType: 'json'
+  });
+}
+
+/**
+ * Nastaví farbu mapy
+ * @param row riadok matice, v ktorom je 8 hodnôt percentuálneho počtu nakazených podľa krajov
+ */
+function updateRegionTextAndColor(row){
+  for (i = 0; i &lt; row.length; i++){
+    if (row[i] > 90) newColor = "#ff2b2b";
+    else if (row[i] > 80) color = "#ec3e28";
+    else if (row[i] > 70) color = "#d84828";
+    else if (row[i] > 60) color = "#c95e25";
+    else if (row[i] > 50) color = "#bb7222";
+    else if (row[i] > 40) color = "#aa7a22";
+    else if (row[i] > 30) color = "#998322";
+    else if (row[i] > 20) color = "#888b22";
+    else if (row[i] > 10) color = "#779422";
+    else color = "#55a522";
+    document.getElementById(i).style.fill = color;
+    document.getElementById("text"+i).innerHTML = row[i]+"%";
+  }
+}
+
+/**
+ * Zastaví animáciu
+ */
+function stopAnimation(){
+  running = 0;
+}
+
+/**
+* Inicializuje mapu
+* Zaktívni prvky ovládania mapy
+*/
+function initializeMap(data, textStatus, jqXHR){
+  mapData = data;
+  updateRegionTextAndColor(mapData[0]);
+
+  var mapControls = document.getElementsByClassName("mapControl");
+  for (i = 0; i &lt; mapControls.length; i++) {
+    mapControls[i].disabled = false;
+  }
+  rangeInput = document.getElementById("rangeInput");
+  rangeInput.max = mapData.length-1;
+  rangeInput.value = 0;
+}
+
+/**
+* Posunie mapu o 1 snimok
+* @param direction smer, ktorým sa má pohnúť
+*/
+function changeMapManually(direction){
+  direction = parseInt(direction);
+  move = currentMapSample + direction
+  if (move == -1 || move >= mapData.length){
+    return
+  }
+  else{
+    currentMapSample = move;
+    rangeInput.value = currentMapSample;
+    updateRegionTextAndColor(mapData[currentMapSample]);
+  }
+}
+
+/**
+* Reprezentuje beh animácie
+* Rekurzívne volá sama seba s daným časovým intervalom
+*/
+function runAnimation(){
+  if (running == 1){
+    if (currentMapSample == mapData.length-1){
+      running = 0;
+      return;
+    }
+    currentMapSample++;
+    rangeInput.value = currentMapSample;
+    setTimeout(function() {
+        requestAnimationFrame(runAnimation);
+        updateRegionTextAndColor(mapData[currentMapSample]);
+    }, interval);
+  }
+  if (running == -1){
+    if (currentMapSample == 0){
+      running = 0;
+      return;
+    }
+    currentMapSample--;
+    rangeInput.value = currentMapSample;
+    setTimeout(function() {
+        requestAnimationFrame(runAnimation);
+        updateRegionTextAndColor(mapData[currentMapSample]);
+    }, interval);
+  }
+}
+
+/**
+* Nastaví mapu na konrkétny snímok
+* @param value číslo snímky, ktorá sa má zobraziť
+*/
+function setSample(value){
+  currentMapSample = value;
+  updateRegionTextAndColor(mapData[currentMapSample]);
+}
+
+/**
+* Spustí animáciu dopredu
+*/
+function startAnimation(){
+  if (running == -1){
+    running = 1;
+  }
+  if (running == 0){
+    interval = 500;
+    running = 1;
+    runAnimation();
+  }
+}
+
+/**
+* Spustí animáciu dozadu
+*/
+function reverseAnimation(){
+  if (running == 1){
+    running = -1;
+  }
+  if (running == 0){
+    interval = 500;
+    running = -1;
+    runAnimation();
+  }
+}
+
+/**
+* Zvýši rýchlosť animácie (x2)
+*/
+function increaseAnimationSpeed(){
+  interval /= 2;
+}
+
+/**
+* Zníži rýchlosť animácie (x0.5)
+*/
+function decreaseAnimationSpeed(){
+  interval *= 2;
+}
+
+/**
+* Funkcia spracuje chybu (ak nebolo ziskanie JSON údajov zo servera úspešné)
+*/
+function handleError(){
+  alert("error");
+}
+
+/**
+* Naloaduje mapu zo servera volaním funkcia getDataFromServer
+* Ak je volanie úspešné, pokračuje volaním initializeMap
+* V opačnom prípade volá funkciu handleError
+*/
+function loadMap(){
+  getDataFromServer(initializeMap, handleError);
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#changeMapManually">changeMapManually</a></li><li><a href="global.html#decreaseAnimationSpeed">decreaseAnimationSpeed</a></li><li><a href="global.html#getDataFromServer">getDataFromServer</a></li><li><a href="global.html#handleError">handleError</a></li><li><a href="global.html#increaseAnimationSpeed">increaseAnimationSpeed</a></li><li><a href="global.html#initializeMap">initializeMap</a></li><li><a href="global.html#loadMap">loadMap</a></li><li><a href="global.html#reverseAnimation">reverseAnimation</a></li><li><a href="global.html#runAnimation">runAnimation</a></li><li><a href="global.html#setSample">setSample</a></li><li><a href="global.html#startAnimation">startAnimation</a></li><li><a href="global.html#stopAnimation">stopAnimation</a></li><li><a href="global.html#updateRegionTextAndColor">updateRegionTextAndColor</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Tue Dec 01 2015 20:08:49 GMT+0100 (Central Europe Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
