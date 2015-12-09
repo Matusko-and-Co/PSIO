@@ -7,7 +7,11 @@ V súèasnosti prebieha projekt APVV s lekárskou fakultou, kde sa zaoberáme predik
 
 ## Blízke termíny
 * každá streda 11:30 - Stretnutia s cviciacim (Andrej Jursa)
-* [do 2.12.2015, 20:00 Integrované dielo s dokumentáciou](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/dielo.html)
+* [do 19.01.2016, 12:00 kompletná Závereèná správa](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/report.html)
+* [do 12.01.2016, 12:00 Vlastné zhodnotenie diela, návrhy na zmeny v ïalšej verzii, zhodnotenie vlastnej tímovej práce](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/zhodnotenie.html)
+* [do 16.12.2015, 20:00 Záznam z odovzdania a predvedenia diela zadávate¾ovi](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/odovzdanie.html)
+* <del>[do 9.12.2015, 20:00 Výsledok testovania](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/testovanie.html)
+* <del>[do 2.12.2015, 20:00 Integrované dielo s dokumentáciou](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/dielo.html)
 * <del>[do 25.11.2015, 20:00 Hotové komponenty s dokumentáciou](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/komponenty.html)
 * <del>[do 18.11.2015, 20:00 Hotové komponenty, 1. verzia](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/komponenty.html)
 * <del>[do 11.11.2015, 20:20 Podrobná špecifikácia komponentov](http://dai.fmph.uniba.sk/courses/tvorbaIS/kalendar/specifikacia_komponentov.html)
