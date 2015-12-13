@@ -44,20 +44,29 @@
 
 				$sheetData = $objPHPExcel->getActiveSheet()->toArray(null,true,true,true);
 				
-				$temp = array();
+				$valueArray = array();
+				$max = 0;
 				
 				for($i = 3; $i <= count($sheetData); $i++){
 					if($sheetData[$i]['A'] == ''){
 						break;
 					}
 					
-					$temp[] = array(0 => trim($sheetData[$i]['A']), 1 => trim($sheetData[$i]['F']), 2 => trim($sheetData[$i]['E']), 3 => trim($sheetData[$i]['C']),
-					4 => trim($sheetData[$i]['D']), 5 => trim($sheetData[$i]['B']), 6 => trim($sheetData[$i]['H']), 7 => trim($sheetData[$i]['G']));
+					$valueArray[$i-3] = array(0 => floatval($sheetData[$i]['A']), 1 => floatval($sheetData[$i]['F']), 2 => floatval($sheetData[$i]['E']), 3 => floatval($sheetData[$i]['C']), 4 => floatval($sheetData[$i]['D']), 5 => floatval($sheetData[$i]['B']), 6 => floatval($sheetData[$i]['H']), 7 => floatval($sheetData[$i]['G']));
+					
+					$max = max($max, max($valueArray[$i-3]));
 				}
 				
+				$max = floatval($max);
+				for($i = 0; $i < count($valueArray); $i++){
+					for($j = 0; $j < count($valueArray[$i]); $j++){
+						$valueArray[$i][$j] = $valueArray[$i][$j] / $max * 100;
+					}
+				}
+		
 				$file = fopen(self::FILE, "w") or die("Nepodarilo sa otvoriť súbor!");
 				
-				fwrite($file, json_encode($temp));
+				fwrite($file, json_encode($valueArray));
 				
 				fclose($file);
 				
