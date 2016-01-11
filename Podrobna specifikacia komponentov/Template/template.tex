@@ -266,7 +266,6 @@ Metódy
 \begin{itemize}
 	\item initialize() – Zobrazenie mapy a inicializácia hodnôt.
 	\item mapPaint() – Zafarbenie jednotlivých krajov slovenska na mape.
-	\item mapThread() – Spravovanie multithreadingu pre beh animácie.
 	\item mapStart() – Spustenie animácie.
 	\item mapPause() – Pozastavenie animácie.
 	\item mapStop() – Zastavenie animácie a pretočenie na začiatok.
@@ -348,6 +347,22 @@ Metódy
 Metódy
 \begin{itemize}
 	\item getDataFromServeromFile(successListener, errorListener) – Získa údaje zo servera pomocou ajaxu GET požiadavkou v JSON formáte. Dva parametre predstavujú funkcie, čo robiť, ak sme údaje získali úspešne resp. neúspešne.
+\end{itemize}
+
+\subsection[Trieda Map]{\rmfamily\bfseries
+	Trieda Map}
+
+Metódy
+\begin{itemize}
+	\item initialize() – Vykreslí SVG mapu, inicializuje parametre mapy, nastaví animáciu do počiatočného stavu
+	\item mapPaint() – Prechádza všetkými krajmi, číta dáta o počte nakazených a zafarbuje kraje prislusnou farbou
+	\item mapStart() – Spustí sa thread animácie, po každom kroku sa prekraslí mapa.
+	\item mapPause() – Prerúší sa thread animácie.
+	\item mapStop() – Zastaví sa thread animácie a animácia sa pretočí na začiatok
+	\item mapNext() – Vykreslia sa farby krajov pre další deň.
+	\item mapPrevious() – Vykreslia sa farby krajov pre predchádzajúci deň.
+	\item mapFast() – Beh threadu sa zrýchli.
+	\item mapSlow() – Beh threadu sa spomalí.
 \end{itemize}
 
 \chapter[Testovacie scenáre]{\rmfamily\bfseries
