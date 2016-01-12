@@ -6,7 +6,7 @@ var rangeInput; //HTML element rangeInput, slider na nastavenie snímku
 
 
 /* Získa dáta zo servera.
-*	@successListener - funkcia, čo má robiť aj bola požiadavka úspešná
+*	@successListener - funkcia, čo má robiť ak bola požiadavka úspešná
 *	@errorListener - funkcia, čo má robiť ak bola požiadavka neúspešná
 */
 function getDataFromServer(successListener, errorListener){
@@ -79,7 +79,7 @@ function initializeMap(data, textStatus, jqXHR){
 */
 function changeMapManually(direction){
   direction = parseInt(direction);
-  move = currentMapSample + direction
+  move = currentMapSample + direction;
   if (move == -1 || move >= mapData.length){
     return
   }
@@ -103,21 +103,22 @@ function runAnimation(){
     currentMapSample++;
     rangeInput.value = currentMapSample;
     setTimeout(function() {
-        requestAnimationFrame(runAnimation);
-        updateRegionTextAndColor(mapData[currentMapSample]);
+      requestAnimationFrame(runAnimation);
     }, interval);
+    updateRegionTextAndColor(mapData[currentMapSample]);
   }
   if (running == -1){
     if (currentMapSample == 0){
+      rangeInput.value = currentMapSample;
       running = 0;
       return;
     }
     currentMapSample--;
     rangeInput.value = currentMapSample;
     setTimeout(function() {
-        requestAnimationFrame(runAnimation);
-        updateRegionTextAndColor(mapData[currentMapSample]);
+      requestAnimationFrame(runAnimation);
     }, interval);
+    updateRegionTextAndColor(mapData[currentMapSample]);
   }
 }
 

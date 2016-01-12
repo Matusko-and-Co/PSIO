@@ -49,7 +49,7 @@
 
 	</form>
 	<script>
-		window.onload = loadMap();
+		window.onload = loadMap;
 	</script>
 </main>
 
