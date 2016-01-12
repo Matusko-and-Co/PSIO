@@ -119,7 +119,7 @@ Táto  časť  bude  venovaná približnému  grafickému  opisu užívateľské
 		\hline
 		Aktuálny súbor & Návestie zobrazujúce názov súboru aktuálne použitého vstupu.\\ [0ex]
 		\hline
-		Súbor & Užívateľ  vyberie  validný XLS alebo XLSX súbor obsahujúci maticu. \\ [0ex]
+		Súbor & Užívateľ vyberie validný XLS alebo XLSX súbor obsahujúci maticu. \\ [0ex]
 		\hline
 		Staré heslo & Užívateľ zadá svoje pôvodné heslo.\\ [0ex]	
 		\hline
@@ -140,7 +140,7 @@ V tejto časti sú umiestnené diagramy, ktoré popisujú predovšetkým možné
 	Stavový diagram}
 Tento diagram ukazuje jednotlivé stavy a ich zmeny v troch situáciách:
 \begin{itemize}
-	\item prezeranie prezentácie
+	\item prezeranie prezentácie,
 	\item zmena hesla,
 	\item zmena údajov, z ktorých sa vytvára animácia.
 \end{itemize}
@@ -154,7 +154,7 @@ Tento diagram ukazuje jednotlivé stavy a ich zmeny v troch situáciách:
 \clearpage
 \subsection[Use case diagram]{\rmfamily\bfseries
 	Use case diagram}
-Tento diagram poskytuje najzákladnejší prehľad prípadov použitia. Každý prípad použitia opisuje jeden spôsob použitia systému z hľadiska používateľa
+Tento diagram poskytuje najzákladnejší prehľad prípadov použitia. Každý prípad použitia opisuje jeden spôsob použitia systému z hľadiska používateľa.
 
 \begin{figure}[htb]
 	\centering
@@ -168,7 +168,7 @@ Tento diagram poskytuje najzákladnejší prehľad prípadov použitia. Každý 
 \clearpage
 \subsection[Entito-relačný diagram]{\rmfamily\bfseries
 	Entito-relačný diagram}
-Tento diagram je vlastne špeciálnym grafom, ktorý naznačuje vzťahy medzi subjektmi v databáze
+Tento diagram je vlastne špeciálnym grafom, ktorý naznačuje vzťahy medzi subjektami v databáze.
 
 \begin{figure}[htb]
 	\centering
@@ -208,7 +208,7 @@ Prichádzajúce HTTP požiadavky vyhodnotí najprv nginx server a následne PHP.
 
 \section[Domain model diagram]{\rmfamily\bfseries
 	Domain model diagram}
-Administrátor (zadávateľ) uploadne na stránku .xls súbor, ktorý server spracuje, a uloží si z neho dáta. Štruktúra uloženého údaju - počet ochorených / deň / kraj Slovenska. Server spracuje požiadavky od užívateľa a pošle statický obsah stránky. Webová stránka následne zobrazí animáciu pre užívateľa.
+Administrátor (zadávateľ) uploadne na stránku .xls súbor, ktorý server spracuje a uloží si z neho dáta. Štruktúra uloženého údaju - počet ochorených / deň / kraj Slovenska. Server spracuje požiadavky od užívateľa a pošle statický obsah stránky. Webová stránka následne zobrazí animáciu pre užívateľa.
 \begin{figure}[htb]
 \includegraphics[scale=0.5]{Domain_model_diagram}
 \caption[Domain model diagram]{Domain model diagram}
@@ -217,7 +217,7 @@ Administrátor (zadávateľ) uploadne na stránku .xls súbor, ktorý server spr
 
 \section[Data model]{\rmfamily\bfseries
 	Data model}
-Administrátor (zadávateľ) uploadne na stránku .xls alebo .xlsx súbor, ktorý server spracuje. Server dáta prekonvertuje do formátu json. Následne ich uloží do .json súboru, ktorý sa nachádza na serveri. Relatívna cesta k súboru: ../data/data.json
+Administrátor (zadávateľ) uploadne na stránku .xls alebo .xlsx súbor, ktorý server spracuje. Server dáta prekonvertuje do formátu JSON. Následne ich uloží do .json súboru, ktorý sa nachádza na serveri. Relatívna cesta k súboru: ../data/data.json
 \begin{figure}[htb]
 	\includegraphics[scale=0.5]{data_model}
 	\caption[Data model]{Data model}
@@ -236,20 +236,20 @@ Administrátor (zadávateľ) uploadne na stránku .xls alebo .xlsx súbor, ktor�
 	Trieda Administration}
 Atribúty:
 \begin{itemize}
-		\item FILE – Konštana obsahujúca názov súboru s údajmi. 
+		\item FILE – Konštanta obsahujúca názov súboru s údajmi. 
 \end{itemize}
 Metódy
 \begin{itemize}
 	\item changePassword(\$oldPassword, \$newPassword, \$newPasswordCheck) – Zmení heslo administrátora, ak je staré heslo správne a ak sú obe nové heslá rovnaké, inak vyhodí error.
-	\item uploadFile(\$file) – Prepíše údaje z excel súboru do JSON súboru a zapíše ho na disk..
+	\item uploadFile(\$file) – Prepíše údaje z excel súboru do JSON súboru a zapíše ho na disk.
 \end{itemize}
 
 \subsection[Trieda Passwd]{\rmfamily\bfseries
 	Trieda Passwd}
 Atribúty:
 \begin{itemize}
-	\item SERCRET\_KEY – Konštanta, ktorá obsahuje tajný kľúč, ktorý sa pripíše ku heslo pri vytváraní hešu. 
-	\item FILE – Konštana obsahujúca názov súboru s heslom.
+	\item SERCRET\_KEY – Konštanta, ktorá obsahuje tajný kľúč, ktorý sa pripíše k heslu pri vytváraní hešu. 
+	\item FILE – Konštanta obsahujúca názov súboru s heslom.
 \end{itemize}
 Metódy
 \begin{itemize}
@@ -282,12 +282,12 @@ Metódy
 	Trieda GetDataFromServer}
 Metódy
 \begin{itemize}
-	\item getDataFromServeromFile(successListener, errorListener) – Získa údaje zo servera GET požiadavkou. Dva parametre predstavujú funkcia, čo robiť, ak sme údaje získali úspešne resp. neúspešne.
+	\item getDataFromServeromFile(successListener, errorListener) – Získa údaje zo servera GET požiadavkou. Dva parametre predstavujú funkcie, čo robiť, ak sme údaje získali úspešne resp. neúspešne.
 \end{itemize}
 
 \section[Data flow diagram]{\rmfamily\bfseries
 	Data flow diagram}
-	Diagram graficky znázornuje toky údajov prúdiace cez informačný systém. Vizualizuje proces spracovávania údajov.
+	Diagram graficky znázorňuje toky údajov prúdiace cez informačný systém. Vizualizuje proces spracovávania údajov.
 	
 	\begin{figure}[htb]
 		\includegraphics[scale=0.5]{data_flow}
@@ -297,7 +297,7 @@ Metódy
 \clearpage
 \section[Sekvenčný diagram]{\rmfamily\bfseries
 		Sekvenčný diagram}
-	Diagram zobrazuje postup pri zmene hesla. Užívateľ vyplní staré heslo, nové heslo a nové heslo ešte raz pre kontrolu. Staré heslo sa skontrolouje so serverom a nové heslá sa skontrolujú navzájom. Ak je všetko správne, užíveteľovi sa zmeni heslo, inak sa zobrazí chybová hláška a bude možnosť opraviť vstup.
+	Diagram zobrazuje postup pri zmene hesla. Užívateľ vyplní staré heslo, nové heslo a nové heslo ešte raz pre kontrolu. Staré heslo sa skontrolouje so serverom a nové heslá sa skontrolujú navzájom. Ak je všetko správne, užíveteľovi sa zmení heslo, inak sa zobrazí chybová hláška a bude možnosť opraviť vstup.
 	
 	\begin{figure}[htb]
 		\includegraphics[scale=0.5]{sequence}
@@ -336,7 +336,7 @@ Metódy
 	\item readFromFile() – Prečíta heslo zo súboru alebo vyhodí chybu, ak to nie je možné.
 	\item createNewPassword(string \$passwd) – Zapíše nové heslo do súboru ako heš alebo vyhodí chybu, ak to nie je možné.
 	\item makeHash(string \$phrase) – Najprv vytvorí soľ tak, že daný string zahešuje algoritmom SHA512 a z neho vezme niektoré znaky. Heš vytvorí ako spojenie tajného kľúča SERCRET\_KEY, \$phrase a soli prostredníctvom algoritmu SHA512.
-	\item comparePasswords(string \$passwd) – Prečíta heslo zo súboru pomocou readFromFile() a porovná s  \$passwd.
+	\item comparePasswords(string \$passwd) – Prečíta heslo zo súboru pomocou readFromFile() a porovná s \$passwd.
 \end{itemize}
 
 \section[Triedy typu radič]{\rmfamily\bfseries
@@ -354,11 +354,11 @@ Metódy
 
 Metódy
 \begin{itemize}
-	\item initialize() – Vykreslí SVG mapu, inicializuje parametre mapy, nastaví animáciu do počiatočného stavu
-	\item mapPaint() – Prechádza všetkými krajmi, číta dáta o počte nakazených a zafarbuje kraje prislusnou farbou
+	\item initialize() – Vykreslí SVG mapu, inicializuje parametre mapy, nastaví animáciu do počiatočného stavu.
+	\item mapPaint() – Prechádza všetkými krajmi, číta dáta o počte nakazených a zafarbuje kraje prislusnou farbou.
 	\item mapStart() – Spustí sa thread animácie, po každom kroku sa prekraslí mapa.
 	\item mapPause() – Prerúší sa thread animácie.
-	\item mapStop() – Zastaví sa thread animácie a animácia sa pretočí na začiatok
+	\item mapStop() – Zastaví sa thread animácie a animácia sa pretočí na začiatok.
 	\item mapNext() – Vykreslia sa farby krajov pre další deň.
 	\item mapPrevious() – Vykreslia sa farby krajov pre predchádzajúci deň.
 	\item mapFast() – Beh threadu sa zrýchli.
@@ -416,17 +416,17 @@ Metódy
 	\linebreak
 	\textbf{Vstup:} Kliknutie na tlačidlo zastavenia animácie.\linebreak
 	\textbf{Výstup:} Animácia sa zastaví a pretočí na začiatok.\linebreak
-	\textbf{Postup:} Niekoľkokrát spustená animácia a niekoľkokrát pretočena animácia sliderom na začiatok. (Podľa posledných zmien v implementácií sa bude pretáčanie animácie regulovať sliderom, nie tlačidlom) \linebreak
+	\textbf{Postup:} Niekoľkokrát spustená animácia a niekoľkokrát pretočená animácia sliderom na začiatok (podľa posledných zmien v implementácií sa bude pretáčanie animácie regulovať sliderom, nie tlačidlom). \linebreak
 	\textbf{Otestované:} Áno.\linebreak
 	\linebreak
 	\textbf{Vstup:} Kliknutie na tlačidlo zrýchlenia animácie.\linebreak
 	\textbf{Výstup:} Animácia sa zrýchli.\linebreak
-	\textbf{Postup:} Niekoľkonásobné kliknutie na tlačidlá zrýchlenia s spomalenia animácie. \linebreak
+	\textbf{Postup:} Niekoľkonásobné kliknutie na tlačidlá zrýchlenia a spomalenia animácie. \linebreak
 	\textbf{Otestované:} Áno.\linebreak
 	\linebreak
 	\textbf{Vstup:} Kliknutie na tlačidlo spomalenia animácie.\linebreak
 	\textbf{Výstup:} Animácia spomalí.\linebreak
-	\textbf{Postup:} Niekoľkonásobné kliknutie na tlačidlá zrýchlenia s spomalenia animácie. \linebreak
+	\textbf{Postup:} Niekoľkonásobné kliknutie na tlačidlá zrýchlenia a spomalenia animácie. \linebreak
 	\textbf{Otestované:} Áno.\linebreak
 	\linebreak
 	\textbf{Vstup:} Kliknutie na tlačidlo prechodu na další obrázok animácie.\linebreak
@@ -454,13 +454,13 @@ Metódy
 \section[Celkové zhodnotenie]{\rmfamily\bfseries
 	Celkové zhodnotenie}
 
-	Podarilo sa nám implementovať všetky požadované funkcionality efektívne a vizuálne priateľne v relatívne krátkom čase. Všetky požiadavky zadávateľky boli do botky splnené. Zadávaťeľka sa vyjadrila kladne, jej predstavy o funkčnosti a vzhľade boli splnené. Samotný tím je s priebehom a výsledkom spokojný, hlavne z pohľadu vzájomnej spolupráce a nápomocnosti pri riešení problémov.
+	Podarilo sa nám implementovať všetky požadované funkcionality efektívne a vizuálne priateľne v relatívne krátkom čase. Všetky požiadavky zadávateľky boli do bodky splnené. Zadávaťeľka sa vyjadrila kladne, jej predstavy o funkčnosti a vzhľade boli splnené. Samotný tím je s priebehom a výsledkom spokojný, hlavne z pohľadu vzájomnej spolupráce a nápomocnosti pri riešení problémov.
 	\par
 	Vývoj prebehol prevažne bezproblémovo. Prvým a najväčším problémom bol odchod prvého člena tímu hneď v úvode semestra. Bolo potrebné preorganizovať plán práce tak aby sme aj bez jedného člena tímu dokázali stíhnúť všetky deadliny. Ďaľším problémom bola komunikácia so zadávateľkou, ktorá bola v danom období veľmi vyťažená. Nestíhala nám odpovedať na otázky a posielať vzorové vstupné súbory, čo naš postup mierne spomalilo. Problémom by sa dala nazvať aj naša neskúsenosť s prácou s mapami. Vyhradenie času pre dôsledné naštudovanie problematiky tento problém vyriešilo. 
 	\par
 	V nasledujúcej verzii softvéru by sa podľa slov zadávaťeľky mohlo nachádzať viac druhov štatistických údajov pre dané obdobie. 
 	\par
-	Drobné odlišnosti od plánu vznikli pri implementácii mapy vzhľadom na to, že sme dopredu nevedeli ako bude mapa fungovať. Ide hlavne o podrobný popis metód. Ďalej vznikli odlišnosti pri prvkoch pre manipuláciu s animáciou. Pribudol slider pre jednoduchosť pretáčania animácie a odstránili sme zbytočné tlačilo pretočenia animácie na začiatok. Zmena z nášho pohľadu nastala aj vo využití diela - pôvodne sme očakávali údaje o počte nakazených za celý rok, pri mape sa teda mal zobrazovať aj dátum. Nakoniec však mapa bude reprezentovať priebeh počtu nakazených pre jednu konkrétnu chorobu v premenlivom časovom horizonte. Dátum pri mape by teda neplnil žiaden účel.
+	Drobné odlišnosti od plánu vznikli pri implementácii mapy vzhľadom na to, že sme dopredu nevedeli ako bude mapa fungovať. Ide hlavne o podrobný popis metód. Ďalej vznikli odlišnosti pri prvkoch pre manipuláciu s animáciou. Pribudol slider pre jednoduchosť pretáčania animácie a odstránili sme zbytočné tlačidlo pretočenia animácie na začiatok. Zmena z nášho pohľadu nastala aj vo využití diela - pôvodne sme očakávali údaje o počte nakazených za celý rok, pri mape sa teda mal zobrazovať aj dátum. Nakoniec však mapa bude reprezentovať priebeh počtu nakazených pre jednu konkrétnu chorobu v premenlivom časovom horizonte. Dátum pri mape by teda neplnil žiaden účel.
 	\par
 	Komunikácia členov tímu fungovala bezproblémovo. Všetci si splnili svoje povinnosti v stanovenom termíne. Úlohy boli rozdelené rovnomerne. Až na pár nedorozúmení, ktoré nemali dlhý priebeh, považujeme našu prácu za veľmi úspešnú.
 
@@ -469,8 +469,11 @@ Metódy
 
 \begin{itemize}
 	\item Matúš Čongrády - Som veľmi rád, že som mohol pracovať v tomto teame. Všetci si plnili svoje úlohy kvalitne a načas. Nevznikali žiadne hádky. Všetky názorové nezhody sme si jednoducho a bezproblémov vydiskutovali. Komunikácia bola výborná, hlavným prostriedkom bola naša skupinová konverzácia na facebooku, kde sme si dohadovali stretnutia a operatívne riešili vzniknuté problémy. Komunikácia na fyzických stretnutiach bola tiež bezproblémová a rýchla. Myslím, že výsledné dielo je kvalitné, efektívne a funkčné. Keďže som popri vývoji projektu (a hlavne po ňom) získal veľa nových vedomostí, hlavne z javascriptu, tak niektoré konkrétne implementačné detaily by som dnes riešil inak, ale sú to len detaily, ktoré funkčnosti a efektívnosti nič neuberajú. Z môjho hladiska by sa dal projekt ďalej vyvíjať aj ako produkt (krabicovka). Mapa by sa veľmi ľahko dala prerobiť na všeobecnú, a mohla by vizualizovať rôzne údaje, nielen počet nakazených (napríklad počet nezamestnaných, počet smrteľných nehôd, a rôzne iné štatistiky).
-	\item Tibor Hanesz
-	\item Katarína Šimnová - Oceňujem spoluprácu v tíme. Teším sa, že sa mi podarilo natrafiť na zodpovedných, inteligentých a ceľavedomých ľudí, ktorí sú pre výsledok projektu kľúčoví. Projekt z môjho pohľadu splnil účel, naučili sme sa kopu dôležitých veci, vďaka ktorým budeme v budúcnosti schopní produkovať kvalitné produkty.
+	\item Tibor Hanesz - Výsledné dielo dopadlo veľmi dobre, spĺňa všetky požiadavky a z grafického hľadiska je tiež v poriadku. Aj keď sa počas vývoja vyskytli nejaké nezhody, po vzájomnej diskusii sa rýchlo vyriešili.\par
+	V nasledujúcej verzii by bolo fajn, ak by sa vytvorila nejaká hierarchia užívateľ administrátor, teda nie každý by mohol aplikáciu používať a rozdelili by sa prístupy. Taktiež by sa dala aplikácia použiť aj na iné štatistiky ako počet nakazených.\par
+	Z mojej strany som sa plánu držal skoro úplne. V mape boli nejaké zmený, ktoré ale viacmenej vznikli zo strany zadávateľky.\par
+	Ako tím sme pracovali dostatočne na úrovni, aby sme boli efektívny a dodržiavali termíny, pričom si udržovali kvalitu výsledného produktu. Plán a rozdelenie úloh sme preberali osobne, inak sme väčšinu vecí, ktoré sa vyskytli, riešili online.s
+	\item Katarína Šimnová - Oceňujem spoluprácu v tíme. Teším sa, že sa mi podarilo natrafiť na zodpovedných, inteligentých a cieľavedomých ľudí, ktorí sú pre výsledok projektu kľúčoví. Projekt z môjho pohľadu splnil účel, naučili sme sa kopu dôležitých vecí, vďaka ktorým budeme v budúcnosti schopní produkovať kvalitné produkty.
 \end{itemize}
 
 \end{document}

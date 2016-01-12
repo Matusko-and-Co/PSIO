@@ -45,23 +45,13 @@
 				$sheetData = $objPHPExcel->getActiveSheet()->toArray(null,true,true,true);
 				
 				$valueArray = array();
-				$max = 0;
 				
 				for($i = 3; $i <= count($sheetData); $i++){
 					if($sheetData[$i]['A'] == ''){
 						break;
 					}
 					
-					$valueArray[$i-3] = array(0 => floatval($sheetData[$i]['A']), 1 => floatval($sheetData[$i]['F']), 2 => floatval($sheetData[$i]['E']), 3 => floatval($sheetData[$i]['C']), 4 => floatval($sheetData[$i]['D']), 5 => floatval($sheetData[$i]['B']), 6 => floatval($sheetData[$i]['H']), 7 => floatval($sheetData[$i]['G']));
-					
-					$max = max($max, max($valueArray[$i-3]));
-				}
-				
-				$max = floatval($max);
-				for($i = 0; $i < count($valueArray); $i++){
-					for($j = 0; $j < count($valueArray[$i]); $j++){
-						$valueArray[$i][$j] = $valueArray[$i][$j] / $max * 100;
-					}
+					$valueArray[$i-3] = array(0 => round(floatval($sheetData[$i]['A'])*6.25, 2), 1 => round(floatval($sheetData[$i]['F'])*6.55, 2), 2 => round(floatval($sheetData[$i]['E'])*6.9, 2), 3 => round(floatval($sheetData[$i]['C'])*6.849, 2), 4 => round(floatval($sheetData[$i]['D'])*5.91, 2), 5 => round(floatval($sheetData[$i]['B'])*5.586, 2), 6 => round(floatval($sheetData[$i]['H'])*7.955, 2), 7 => round(floatval($sheetData[$i]['G'])*8.199, 2));
 				}
 		
 				$file = fopen(self::FILE, "w") or die("Nepodarilo sa otvoriť súbor!");

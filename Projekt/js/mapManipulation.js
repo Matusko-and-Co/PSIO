@@ -34,18 +34,18 @@ function getDataFromServer(successListener, errorListener){
 */
 function updateRegionTextAndColor(row){
   for (i = 0; i < row.length; i++){
-    if (row[i] > 90) newColor = "#ff2b2b";
-    else if (row[i] > 80) color = "#ec3e28";
-    else if (row[i] > 70) color = "#d84828";
-    else if (row[i] > 60) color = "#c95e25";
-    else if (row[i] > 50) color = "#bb7222";
-    else if (row[i] > 40) color = "#aa7a22";
-    else if (row[i] > 30) color = "#998322";
-    else if (row[i] > 20) color = "#888b22";
-    else if (row[i] > 10) color = "#779422";
+    if (row[i] == 14) newColor = "#ff2b2b";
+    else if (row[i] == 13) color = "#ec3e28";
+    else if (row[i] == 12) color = "#d84828";
+    else if (row[i] == 11) color = "#c95e25";
+    else if (row[i] == 10) color = "#bb7222";
+    else if (row[i] == 9) color = "#aa7a22";
+    else if (row[i] == 8) color = "#998322";
+    else if (row[i] == 7) color = "#888b22";
+    else if (row[i] == 6) color = "#779422";
     else color = "#55a522";
     document.getElementById(i).style.fill = color;
-    document.getElementById("text"+i).innerHTML = row[i]+"%";
+    document.getElementById("text"+i).innerHTML = row[i];
   }
 }
 
