@@ -1,8 +1,8 @@
 ﻿<?php
 	//nastartovanie session v php
-	//session_start();
+	session_start();
 
-	//date_default_timezone_set("Europe/Bratislava");
+	date_default_timezone_set("Europe/Bratislava");
 
 	//rychla kontrola, aby sa predislo hijacku
 	if(isset($_SESSION['PREV_USER_AGENT']) && $_SESSION['PREV_USER_AGENT'] != $_SERVER['HTTP_USER_AGENT']){
