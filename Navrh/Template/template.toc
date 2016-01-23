@@ -1,0 +1,23 @@
+\select@language {slovak}
+\contentsline {chapter}{\numberline {1}Konceptu\IeC {\'a}lna anal\IeC {\'y}za}{2}
+\contentsline {section}{\numberline {1.1}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} rozhranie}{2}
+\contentsline {subsection}{\numberline {1.1.1}Hlavn\IeC {\'a} str\IeC {\'a}nka}{2}
+\contentsline {subsection}{\numberline {1.1.2}Prihl\IeC {\'a}senie}{3}
+\contentsline {subsection}{\numberline {1.1.3}Administr\IeC {\'a}cia}{3}
+\contentsline {section}{\numberline {1.2}Mo\IeC {\v z}nosti u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}a}{4}
+\contentsline {subsection}{\numberline {1.2.1}Stavov\IeC {\'y} diagram}{4}
+\contentsline {subsection}{\numberline {1.2.2}Use case diagram}{6}
+\contentsline {subsection}{\numberline {1.2.3}Entito-rela\IeC {\v c}n\IeC {\'y} diagram}{7}
+\contentsline {chapter}{\numberline {2}Anal\IeC {\'y}za technol\IeC {\'o}gi\IeC {\'\i }, dekompoz\IeC {\'\i }cia a d\IeC {\'a}tov\IeC {\'y} model}{8}
+\contentsline {section}{\numberline {2.1}Mo\IeC {\v z}n\IeC {\'e} pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie a postupy}{8}
+\contentsline {subsection}{\numberline {2.1.1}Technol\IeC {\'o}gie}{8}
+\contentsline {section}{\numberline {2.2}Deployment diagram}{9}
+\contentsline {section}{\numberline {2.3}Domain model diagram}{9}
+\contentsline {section}{\numberline {2.4}Data model}{10}
+\contentsline {chapter}{\numberline {3}N\IeC {\'a}vrh}{11}
+\contentsline {section}{\numberline {3.1}Modelov\IeC {\'e} triedy}{11}
+\contentsline {subsection}{\numberline {3.1.1}Trieda Administration}{11}
+\contentsline {subsection}{\numberline {3.1.2}Trieda Passwd}{11}
+\contentsline {section}{\numberline {3.2}Triedy typu radi\IeC {\v c}}{12}
+\contentsline {subsection}{\numberline {3.2.1}Trieda GetDataFromServer}{12}
+\contentsline {section}{\numberline {3.3}Data flow diagram}{12}

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	//nastartovanie session v php
 	session_start();
 
@@ -42,7 +42,8 @@
 ?>
 		<footer>
 			<p>
-				Copyright &copy; 2015 <br />
+				Copyright &copy; 2015 <br>
+        Vyrobili: Matúš Čongrády, Tibor Hanesz, Katarína Šimnová
 			</p>
 		</footer>
 	</body>

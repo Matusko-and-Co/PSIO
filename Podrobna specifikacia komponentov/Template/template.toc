@@ -1,0 +1,35 @@
+\select@language {slovak}
+\contentsline {chapter}{\numberline {1}Konceptu\IeC {\'a}lna anal\IeC {\'y}za}{3}
+\contentsline {section}{\numberline {1.1}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} rozhranie}{3}
+\contentsline {subsection}{\numberline {1.1.1}Hlavn\IeC {\'a} str\IeC {\'a}nka}{3}
+\contentsline {subsection}{\numberline {1.1.2}Prihl\IeC {\'a}senie}{4}
+\contentsline {subsection}{\numberline {1.1.3}Administr\IeC {\'a}cia}{4}
+\contentsline {section}{\numberline {1.2}Mo\IeC {\v z}nosti u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}a}{5}
+\contentsline {subsection}{\numberline {1.2.1}Stavov\IeC {\'y} diagram}{5}
+\contentsline {subsection}{\numberline {1.2.2}Use case diagram}{7}
+\contentsline {subsection}{\numberline {1.2.3}Entito-rela\IeC {\v c}n\IeC {\'y} diagram}{8}
+\contentsline {chapter}{\numberline {2}Anal\IeC {\'y}za technol\IeC {\'o}gi\IeC {\'\i }, dekompoz\IeC {\'\i }cia a d\IeC {\'a}tov\IeC {\'y} model}{9}
+\contentsline {section}{\numberline {2.1}Mo\IeC {\v z}n\IeC {\'e} pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie a postupy}{9}
+\contentsline {subsection}{\numberline {2.1.1}Technol\IeC {\'o}gie}{9}
+\contentsline {section}{\numberline {2.2}Deployment diagram}{10}
+\contentsline {section}{\numberline {2.3}Domain model diagram}{10}
+\contentsline {section}{\numberline {2.4}Data model}{11}
+\contentsline {chapter}{\numberline {3}N\IeC {\'a}vrh}{12}
+\contentsline {section}{\numberline {3.1}Modelov\IeC {\'e} triedy}{12}
+\contentsline {subsection}{\numberline {3.1.1}Trieda Administration}{12}
+\contentsline {subsection}{\numberline {3.1.2}Trieda Passwd}{12}
+\contentsline {subsection}{\numberline {3.1.3}Trieda Map}{13}
+\contentsline {section}{\numberline {3.2}Triedy typu radi\IeC {\v c}}{13}
+\contentsline {subsection}{\numberline {3.2.1}Trieda GetDataFromServer}{13}
+\contentsline {section}{\numberline {3.3}Data flow diagram}{13}
+\contentsline {section}{\numberline {3.4}Sekven\IeC {\v c}n\IeC {\'y} diagram}{15}
+\contentsline {chapter}{\numberline {4}Podrobn\IeC {\'a} \IeC {\v s}pecifik\IeC {\'a}cia komponentov}{16}
+\contentsline {section}{\numberline {4.1}Modelov\IeC {\'e} triedy}{16}
+\contentsline {subsection}{\numberline {4.1.1}Trieda Administration}{16}
+\contentsline {subsection}{\numberline {4.1.2}Trieda Passwd}{16}
+\contentsline {section}{\numberline {4.2}Triedy typu radi\IeC {\v c}}{17}
+\contentsline {subsection}{\numberline {4.2.1}Trieda GetDataFromServer}{17}
+\contentsline {subsection}{\numberline {4.2.2}Trieda Map}{17}
+\contentsline {chapter}{\numberline {5}Testovacie scen\IeC {\'a}re}{18}
+\contentsline {section}{\numberline {5.1}Zmena hesla alebo \IeC {\'u}dajov}{18}
+\contentsline {section}{\numberline {5.2}Spustenie anim\IeC {\'a}cie}{19}
