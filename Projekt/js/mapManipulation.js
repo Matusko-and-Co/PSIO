@@ -34,15 +34,15 @@ function getDataFromServer(successListener, errorListener){
 */
 function updateRegionTextAndColor(row){
   for (i = 0; i < row.length; i++){
-    if (row[i] == 14) newColor = "#ff2b2b";
-    else if (row[i] == 13) color = "#ec3e28";
-    else if (row[i] == 12) color = "#d84828";
-    else if (row[i] == 11) color = "#c95e25";
-    else if (row[i] == 10) color = "#bb7222";
-    else if (row[i] == 9) color = "#aa7a22";
-    else if (row[i] == 8) color = "#998322";
-    else if (row[i] == 7) color = "#888b22";
-    else if (row[i] == 6) color = "#779422";
+    if (row[i] >= 14) color = "#ff2b2b";
+    else if (row[i] >= 13 && row[i] < 14) color = "#ec3e28";
+    else if (row[i] >= 12 && row[i] < 13) color = "#d84828";
+    else if (row[i] >= 11 && row[i] < 12) color = "#c95e25";
+    else if (row[i] >= 10 && row[i] < 11) color = "#bb7222";
+    else if (row[i] >= 9 && row[i] < 10) color = "#aa7a22";
+    else if (row[i] >= 8 && row[i] < 9) color = "#998322";
+    else if (row[i] >= 7 && row[i] < 8) color = "#888b22";
+    else if (row[i] >= 6 && row[i] < 7) color = "#779422";
     else color = "#55a522";
     document.getElementById(i).style.fill = color;
     document.getElementById("text"+i).innerHTML = row[i];
