@@ -38,7 +38,7 @@
   </svg>
   <br>
   <div class="legend">
-    <img src="legenda.png" width="220px"/>
+    <img src="legenda.png" width="250px"/>
     <p>Počet nakazených na 100 000 obyvateľov.</p>
   </div>
   
