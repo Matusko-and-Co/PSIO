@@ -1,0 +1,6 @@
+\select@language {slovak}
+\contentsline {chapter}{\numberline {1}Ovl\IeC {\'a}danie anim\IeC {\'a}cie}{2}
+\contentsline {chapter}{\numberline {2}Administ\IeC {\'a}cia}{4}
+\contentsline {section}{\numberline {2.1}Prihl\IeC {\'a}senie}{4}
+\contentsline {section}{\numberline {2.2}Nahranie s\IeC {\'u}boru a zmena hesla}{5}
+\contentsline {section}{\numberline {2.3}Tvar vstupn\IeC {\'a}ho s\IeC {\'u}boru}{6}
