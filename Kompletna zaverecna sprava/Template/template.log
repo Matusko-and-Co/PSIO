@@ -1,17 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.27)  12 JAN 2016 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.4)  10 FEB 2016 10:19
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**"/Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/
-template.tex"
-
-(/Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/te
-mplate.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/report.cls
+**template.tex
+(template.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -26,20 +21,25 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
+
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -79,23 +79,35 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/preprint/fullpage.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\preprint\fullpage.sty"
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip46
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-slovak/slovak.ldf
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2015/08/03 3.9m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-slovak\slovak.ldf"
 Language: slovak 2008/07/06 v3.1a Slovak support from the babel system
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2015/08/03 3.9m Babel common definitions
 \babel@savecnt=\count100
 \U@D=\dimen112
 )
@@ -104,18 +116,21 @@ Package babel Info: Making " an active character on input line 126.
 Package babel Info: Making ' an active character on input line 129.
 \cs@wordlen=\count101
 Package babel Info: Making - an active character on input line 294.
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks19
 \inpenc@posthook=\toks20
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -263,8 +278,9 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -293,8 +309,9 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -316,48 +333,62 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/indentfirst.sty
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen113
 \extrarowheight=\dimen114
 \NC@list=\toks21
 \extratabsurround=\skip47
 \backup@length=\skip48
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen117
 \captionmargin@=\dimen118
@@ -368,13 +399,11 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@hangindent=\dimen123
 )
 \c@ContinuedFloat=\count103
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/placeins/placeins.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
 Package: placeins 2005/04/18  v 2.2
 )
-(/Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/te
-mplate.aux)
-\openout1 = `template.aux'.
-
+(template.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
@@ -387,7 +416,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen124
@@ -400,46 +430,10 @@ LaTeX Font Info:    ... okay on input line 17.
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks24
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.jpg,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <23> not available
 (Font)              size <24.88> substituted on input line 23.
@@ -450,188 +444,253 @@ LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <16> not available
 
 [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(/Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/te
-mplate.toc
+{C:/Users/Plum/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(template.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ])
 \tf@toc=\write3
-\openout3 = `template.toc'.
-
-[2]
+ [2]
  1.
-<hl_stranka.png, id=17, 641.39626pt x 557.08125pt>
-File: hl_stranka.png Graphic file (type png)
-<use hl_stranka.png>
-Package pdftex.def Info: hl_stranka.png used on input line 47.
-(pdftex.def)             Requested size: 352.76903pt x 306.39563pt.
-
-Overfull \hbox (5.85208pt too wide) in paragraph at lines 55--79
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [3
 
- </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/h
-l_stranka.png>] <prihlasenie.png, id=24, 268.00125pt x 143.03438pt>
-File: prihlasenie.png Graphic file (type png)
-<use prihlasenie.png>
-Package pdftex.def Info: prihlasenie.png used on input line 87.
-(pdftex.def)             Requested size: 160.80197pt x 85.82127pt.
-
-Overfull \hbox (5.85208pt too wide) in paragraph at lines 95--102
- [][] 
- []
-
-<admin.png, id=25, 578.16pt x 225.09094pt>
-File: admin.png Graphic file (type png)
-<use admin.png>
-Package pdftex.def Info: admin.png used on input line 109.
-(pdftex.def)             Requested size: 404.70924pt x 157.56258pt.
-
-Overfull \hbox (5.85208pt too wide) in paragraph at lines 116--131
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template
-/prihlasenie.png> </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna 
-sprava/Template/admin.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+] [4]
+ 2.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 89.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
-<Stavovy_diagram.png, id=31, 725.71124pt x 677.53125pt>
-File: Stavovy_diagram.png Graphic file (type png)
-<use Stavovy_diagram.png>
-Package pdftex.def Info: Stavovy_diagram.png used on input line 149.
-(pdftex.def)             Requested size: 362.85474pt x 338.76479pt.
-[5] [6 </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Temp
-late/Stavovy_diagram.png>] <use_case_diagram.png, id=41, 696.35156pt x 560.0925
-pt>
-File: use_case_diagram.png Graphic file (type png)
-<use use_case_diagram.png>
-Package pdftex.def Info: use_case_diagram.png used on input line 161.
-(pdftex.def)             Requested size: 417.81415pt x 336.05809pt.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
+ [5
+
+] [6]
+ 3.
+
+Overfull \hbox (5.85208pt too wide) in paragraph at lines 122--143
+ [][] 
+ []
+
 [7
 
- </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/u
-se_case_diagram.png>] <E-R_diagram.png, id=45, 619.56468pt x 354.57469pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+[]\T1/cmr/m/n/12 administrátor nav-²tívi ²pe-ciálnu
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 163--164
+\T1/cmr/m/n/12 pod-stránku, ktorá nieje do-stupná
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 167--168
+[]\T1/cmr/m/n/12 po úspe²-nom na-hraní sú-boru (za
+ []
+
+
+Overfull \hbox (5.85208pt too wide) in paragraph at lines 149--171
+ [][] 
+ []
+
+
+Overfull \hbox (5.85208pt too wide) in paragraph at lines 174--184
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8]
+Overfull \hbox (8.56401pt too wide) in paragraph at lines 188--188
+[]\T1/cmr/bx/n/17.28 Popis prí-padu po-u-ºi-tia 3 - Zmena prí-stu-po-vého hesla
+ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+[]\T1/cmr/m/n/12 administrátor nav-²tívi ²pe-ciálnu
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 202--203
+\T1/cmr/m/n/12 pod-stránku, ktorá nieje do-stupná
+ []
+
+
+Overfull \hbox (5.85208pt too wide) in paragraph at lines 191--209
+ [][] 
+ []
+
+
+Overfull \hbox (5.85208pt too wide) in paragraph at lines 212--222
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9] [10]
+ 4.
+<hl_stranka.png, id=42, 641.39626pt x 557.08125pt>
+File: hl_stranka.png Graphic file (type png)
+ <use hl_stranka.png>
+Package pdftex.def Info: hl_stranka.png used on input line 237.
+(pdftex.def)             Requested size: 352.76903pt x 306.39563pt.
+
+Overfull \hbox (5.85208pt too wide) in paragraph at lines 245--269
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11
+
+ <./hl_stranka.png>] <prihlasenie.png, id=49, 268.00125pt x 143.03438pt>
+File: prihlasenie.png Graphic file (type png)
+
+<use prihlasenie.png>
+Package pdftex.def Info: prihlasenie.png used on input line 277.
+(pdftex.def)             Requested size: 160.80197pt x 85.82127pt.
+
+Overfull \hbox (5.85208pt too wide) in paragraph at lines 285--292
+ [][] 
+ []
+
+<admin.png, id=50, 578.16pt x 225.09094pt>
+File: admin.png Graphic file (type png)
+ <use admin.png>
+Package pdftex.def Info: admin.png used on input line 299.
+(pdftex.def)             Requested size: 404.70924pt x 157.56258pt.
+
+Overfull \hbox (5.85208pt too wide) in paragraph at lines 306--321
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./prihlasenie.png> <./admin.png>]
+<Stavovy_diagram.png, id=57, 725.71124pt x 677.53125pt>
+File: Stavovy_diagram.png Graphic file (type png)
+
+<use Stavovy_diagram.png>
+Package pdftex.def Info: Stavovy_diagram.png used on input line 339.
+(pdftex.def)             Requested size: 362.85474pt x 338.76479pt.
+ [13] [14 <./Stavovy_diagram.png>]
+<use_case_diagram.png, id=65, 696.35156pt x 560.0925pt>
+File: use_case_diagram.png Graphic file (type png)
+
+<use use_case_diagram.png>
+Package pdftex.def Info: use_case_diagram.png used on input line 351.
+(pdftex.def)             Requested size: 417.81415pt x 336.05809pt.
+ [15
+
+ <./use_case_diagram.png>]
+<E-R_diagram.png, id=69, 619.56468pt x 354.57469pt>
 File: E-R_diagram.png Graphic file (type png)
-<use E-R_diagram.png>
-Package pdftex.def Info: E-R_diagram.png used on input line 175.
+ <use E-R_diagram.png>
+Package pdftex.def Info: E-R_diagram.png used on input line 365.
 (pdftex.def)             Requested size: 433.6923pt x 248.20059pt.
-[8
 
- </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/E
--R_diagram.png>]
- 2.
-[9
+[16
 
-] <deployment.png, id=52, 1018.80624pt x 200.75pt>
+ <./E-R_diagram.png>]
+ 5.
+[17
+
+] <deployment.png, id=76, 1018.80624pt x 200.75pt>
 File: deployment.png Graphic file (type png)
-<use deployment.png>
-Package pdftex.def Info: deployment.png used on input line 203.
+ <use deployment.png>
+Package pdftex.def Info: deployment.png used on input line 393.
 (pdftex.def)             Requested size: 509.40187pt x 100.37474pt.
 
-Overfull \hbox (56.43398pt too wide) in paragraph at lines 203--204
+Overfull \hbox (56.43398pt too wide) in paragraph at lines 393--394
 [][] 
  []
 
-<Domain_model_diagram.png, id=53, 837.1275pt x 474.27188pt>
+<Domain_model_diagram.png, id=77, 837.1275pt x 474.27188pt>
 File: Domain_model_diagram.png Graphic file (type png)
-<use Domain_model_diagram.png>
-Package pdftex.def Info: Domain_model_diagram.png used on input line 213.
-(pdftex.def)             Requested size: 418.56273pt x 237.13536pt.
-<data_model.png, id=54, 463.7325pt x 316.18124pt>
-File: data_model.png Graphic file (type png)
-<use data_model.png>
-Package pdftex.def Info: data_model.png used on input line 222.
-(pdftex.def)             Requested size: 231.86568pt x 158.09023pt.
-[10 </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Templat
-e/deployment.png> </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna 
-sprava/Template/Domain_model_diagram.png>] [11 </Users/tibinko/Documents/skola/
-tis/PSIO/Kompletna zaverecna sprava/Template/data_model.png>]
- 3.
 
-Overfull \hbox (0.21138pt too wide) in paragraph at lines 243--244
+<use Domain_model_diagram.png>
+Package pdftex.def Info: Domain_model_diagram.png used on input line 403.
+(pdftex.def)             Requested size: 418.56273pt x 237.13536pt.
+
+<data_model.png, id=78, 463.7325pt x 316.18124pt>
+File: data_model.png Graphic file (type png)
+ <use data_model.png>
+Package pdftex.def Info: data_model.png used on input line 412.
+(pdftex.def)             Requested size: 231.86568pt x 158.09023pt.
+ [18 <./deployment.png> <./Domain_model_diagram.png>] [19 <./data_model.png>]
+ 6.
+
+Overfull \hbox (0.21138pt too wide) in paragraph at lines 433--434
 []\T1/cmr/m/n/12 changePassword($oldPassword, $ne-wPas-sword, $ne-wPas-sword-Ch
-eck) ^^U Zmení heslo
+eck)  Zmení heslo
  []
 
-[12
+[20
 
-] <data_flow.jpg, id=67, 606.265pt x 436.63126pt>
+] <data_flow.jpg, id=91, 606.265pt x 436.63126pt>
 File: data_flow.jpg Graphic file (type jpg)
-<use data_flow.jpg>
-Package pdftex.def Info: data_flow.jpg used on input line 293.
+ <use data_flow.jpg>
+Package pdftex.def Info: data_flow.jpg used on input line 483.
 (pdftex.def)             Requested size: 303.13176pt x 218.3151pt.
-[13] [14 </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Te
-mplate/data_flow.jpg>] <sequence.png, id=74, 762.85pt x 686.565pt>
+
+[21] [22 <./data_flow.jpg>] <sequence.png, id=98, 762.85pt x 686.565pt>
 File: sequence.png Graphic file (type png)
+
 <use sequence.png>
-Package pdftex.def Info: sequence.png used on input line 303.
+Package pdftex.def Info: sequence.png used on input line 493.
 (pdftex.def)             Requested size: 381.42407pt x 343.28166pt.
-[15
+ [23
 
- </Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/s
-equence.png>]
- 4.
-[16
+ <./sequence.png>]
+ 7.
+[24
 
-] [17]
- 5.
-[18
+] [25]
+ 8.
+[26
 
-] [19] [20]
- 6.
-[21
+] [27] [28]
+ 9.
+[29
 
-] [22]
-(/Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna sprava/Template/te
-mplate.aux)
+] [30] (template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.88pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 4599 strings out of 493089
- 65304 string characters out of 6134841
- 133177 words of memory out of 5000000
- 7980 multiletter control sequences out of 15000+600000
- 15160 words of font info for 41 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,10n,38p,1225b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "/Users/tibinko/Documents/skola/tis/PSIO/Kompletna zaverecna 
-sprava/Template/template.pdf" (23 pages, 454904 bytes).
+ 4257 strings out of 493673
+ 58112 string characters out of 3141533
+ 128656 words of memory out of 3000000
+ 7533 multiletter control sequences out of 15000+200000
+ 15160 words of font info for 41 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 36i,11n,38p,1147b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Plum\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
+cbx1440.pk> <C:\Users\Plum\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecrm1200.pk> <C:\Users\Plum\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecbi1440.pk> <C:\Users\Plum\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Plum\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Plum\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on template.pdf (31 pages, 478576 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 478 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
